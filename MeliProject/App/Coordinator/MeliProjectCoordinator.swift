@@ -29,8 +29,8 @@ class MeliProjectCoordinator: Coordinator {
     /// **Home*
     /// Controller que exibe uma lista de repositórios
     func start() {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .red
+        let viewController = HomeFactory.makeController(with: self,
+                                                        aditionalInfos: nil)
         navigationController.pushViewController(viewController, animated: true)
     }
     

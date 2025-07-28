@@ -16,10 +16,26 @@ protocol HomeViewDelegate: AnyObject {
 class HomeView: UIView {
     var homeViewModel: HomeViewModel
     weak var delegate: HomeViewDelegate?
+    var searchFieldTopConstraint: Constraint?
+    
+    var searchState: SearchState = .initialSearch {
+        didSet {
+            if searchState == .topViewSearch {
+                setupSearchingConstraints()
+            }
+        }
+    }
+    
+    lazy var searchField: SearchTextFieldView = {
+        let field = SearchTextFieldView()
+        field.delegate = self
+        return field
+    }()
     
     lazy var contentTableView: UITableView = {
         let table = UITableView()
         table.register(ItemViewCell.self, forCellReuseIdentifier: ItemViewCell.identifier)
+        table.isHidden = true
         table.delegate = self
         table.dataSource = self
         table.rowHeight = 120
@@ -63,8 +79,17 @@ class HomeView: UIView {
             homeViewModel.items = content
             return
         }
+        
+        searchState = .topViewSearch
         contentList += content
         homeViewModel.items = contentList
+    }
+    
+
+    func animate() {
+        UIView.animate(withDuration: 0.3) {
+            self.layoutIfNeeded()
+        }
     }
 }
 
@@ -99,25 +124,34 @@ extension HomeView: BaseViewProtocol {
     }
     
     func setupHierarchy() {
+        addSubview(searchField)
         addSubview(contentTableView)
-        addSubview(loadingView)
-        addSubview(emptyView)
     }
     
     func setupConstraints() {
+        searchField.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.leading.trailing.equalToSuperview().inset(20)
+            make.height.equalTo(100)
+            searchFieldTopConstraint = make.centerY.equalToSuperview().constraint
+        }
+        
         contentTableView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.top.equalTo(searchField.snp.bottom).offset(16)
+            make.leading.trailing.bottom.equalToSuperview()
         }
+    }
+    
+    func setupSearchingConstraints() {
+        guard let searchFieldTopConstraint = searchFieldTopConstraint else { return }
         
-        loadingView.snp.makeConstraints { make in
-            make.centerX.centerY.width.equalToSuperview()
-            make.height.equalTo(300)
-        }
+        searchFieldTopConstraint.deactivate()
         
-        emptyView.snp.makeConstraints { make in
-            make.centerX.centerY.width.equalToSuperview()
-            make.height.equalTo(300)
+        searchField.snp.makeConstraints { make in
+            self.searchFieldTopConstraint = make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(16).constraint
         }
+        contentTableView.isHidden = false
+        animate()
     }
     
     func aditionalSetups() {
@@ -161,5 +195,16 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == items.count - 2 {
             delegate?.didRequestedNextPage()
         }
+    }
+}
+
+extension HomeView: SearchFieldDelegate {
+    func didSearch(state: SearchState,text: String) {
+        self.searchState = state
+        print("BUSCAR")
+    }
+    
+    func showResults() {
+        setupSearchingConstraints()
     }
 }
