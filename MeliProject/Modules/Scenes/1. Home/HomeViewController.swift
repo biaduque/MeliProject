@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     var styleView: HomeView?
     var router: HomeRoutingProtocol?
     var interactor: HomeBusinessLogic?
+    var authManager: AuthManager?
     
     private var page: Int = 1
     
@@ -37,7 +38,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         setupController()
-        interactor?.fetchRepoList(page: String(page))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,6 +46,10 @@ class HomeViewController: UIViewController {
     }
     
     // MARK: Suport functions
+    func setup(auth: AuthManager) {
+        self.authManager = auth
+    }
+    
     func setup(router: HomeRoutingProtocol) {
         self.router = router
     }
@@ -56,13 +60,16 @@ class HomeViewController: UIViewController {
     
     func setupController() {
         styleView?.setup(delegate: self)
+        
+//        if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+//            sceneDelegate.authCoordinator?.startMercadoLivreAuth()
+//        }
     }
 }
 
 // MARK: Presenter functions
 extension HomeViewController: ContentControllerProtocol {
-    /// TO-DO: Adicionar modelo para lista de conteúdo
-    func setupContent(with list: [Any]) {
+    func setupContent(with list: SearchResult) {
         styleView?.setup(content: list)
     }
     
@@ -72,6 +79,10 @@ extension HomeViewController: ContentControllerProtocol {
     
     func setupLoading() {
         styleView?.setupLoading()
+    }
+    
+    func hideLoading() {
+        styleView?.hideLoading()
     }
     
     func setupError() {
@@ -85,6 +96,11 @@ extension HomeViewController: ContentControllerProtocol {
 
 // MARK: Extensions
 extension HomeViewController: HomeViewDelegate {
+    func didSearch(item: String) {
+        print("buscou:::", item)
+        interactor?.fetchRepoList(page: String(page))
+    }
+    
     func didSelectItem() {
         print("Selecionou item")
     }

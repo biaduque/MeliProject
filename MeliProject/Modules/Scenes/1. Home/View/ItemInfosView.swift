@@ -60,9 +60,9 @@ class ItemInfosView: UIView {
     }
     
     func setupContent(name: String, value: String, payment: String, shipping: Bool) {
-        itemName.text = "Nome do produto"
-        itemValue.text = "R$ 10,00"
-        itemPaymentConditions.text = "10 x de R$1,00"
+        itemName.text = name
+        itemValue.text = value
+        itemPaymentConditions.text = payment
         freeShipping.isHidden = !shipping
     }
 }

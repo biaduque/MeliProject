@@ -15,6 +15,7 @@ protocol SearchFieldDelegate: AnyObject {
 }
 
 class SearchTextFieldView: UIView {
+    var lastSearched: String = ""
     var state: SearchState = .initialSearch {
         didSet {
             if state == .topViewSearch {
@@ -37,7 +38,7 @@ class SearchTextFieldView: UIView {
     lazy var searchField: UISearchTextField = {
         let field = UISearchTextField()
         field.placeholder = "Buscar..."
-        field.addTarget(self, action: #selector(searchChanged(_:)), for: .editingChanged)
+        field.addTarget(self, action: #selector(searchChanged(_:)), for: .editingDidEndOnExit)
         return field
     }()
    
@@ -67,7 +68,8 @@ class SearchTextFieldView: UIView {
     @objc func searchChanged(_ textField: UITextField) {
         if let text = textField.text {
             state = text.isEmpty ? .initialSearch : .topViewSearch
-            delegate?.didSearch(state: state, text: text)
+            if lastSearched != text { delegate?.didSearch(state: state, text: text) }
+            lastSearched = text
         }
         
         delegate?.showResults()

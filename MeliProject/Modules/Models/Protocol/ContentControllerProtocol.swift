@@ -8,6 +8,7 @@
 protocol ContentControllerProtocol {
     func setupEmpty()
     func setupLoading()
+    func hideLoading()
     func setupError()
     func updateView()
 }

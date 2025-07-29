@@ -11,7 +11,6 @@ class HomeFactory: FactoryProtocol {
     static func makeController(with coordinator: MeliProjectCoordinator, aditionalInfos: Any?) -> UIViewController {
         let viewController = HomeViewController(view: HomeView(viewModel: HomeViewModel()))
         viewController.title = "Busca Livre"
-
         let router = HomeRouter()
         let interactor = HomeInteractor()
         let presenter = HomePresenter()

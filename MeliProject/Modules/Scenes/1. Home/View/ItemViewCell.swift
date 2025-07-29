@@ -7,6 +7,7 @@
 
 
 import UIKit
+import Kingfisher
 
 class ItemViewCell: UITableViewCell {
     static var identifier = "item-view-cell"
@@ -25,8 +26,16 @@ class ItemViewCell: UITableViewCell {
         return view
     }()
     
-    func setupContent(itemName: String) {
-        itemInfos.setupContent(name: "", value: "", payment: "", shipping: true)
+    func setupContent(itemName: String, value: String, payment: String) {
+        itemInfos.setupContent(name: itemName, value: "R$\(value)", payment: payment, shipping: true)
+    }
+    
+    func setupItemImage(url: String) {
+        let url = URL(string: url)
+        itemImage.kf.setImage(with: url,
+                              placeholder: UIImage(named: "empty-user-image"))
+        
+        reloadInputViews()
     }
 }
 

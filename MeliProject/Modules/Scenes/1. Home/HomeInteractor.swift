@@ -27,25 +27,21 @@ class HomeInteractor: HomeBusinessLogic {
     }
     
     func fetchRepoList(page: String) {
-        presenter?.presentLoading()
-        
-        worker?.getRepoList(page: page)
-            .subscribe(
-                onNext: { [weak self] repoListResponse in
-                    guard let self = self else { return }
-                    
-                    presenter?.presentItemsList(content: [""])
-                    
-                },
-                onError: { [weak self] error in
-                    guard let self = self else { return }
-                    presenter?.presentError()
-                    
-                },
-                onCompleted: {
-                    self.presenter?.updateView()
-                }
-            )
-            .disposed(by: disposeBag)
-    }
+            worker?.getRepoList(page: page)
+                .do(onSubscribe: { [weak self] in
+                    self?.presenter?.presentLoading()
+                }, onDispose: { [weak self] in
+                    self?.presenter?.hideLoading()
+                    self?.presenter?.updateView() 
+                })
+                .subscribe(
+                    onNext: { [weak self] itemsResponse in
+                        self?.presenter?.presentItemsList(content: itemsResponse)
+                    },
+                    onError: { [weak self] error in
+                        self?.presenter?.presentError()
+                    }
+                )
+                .disposed(by: disposeBag)
+        }
 }

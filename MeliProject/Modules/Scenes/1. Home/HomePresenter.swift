@@ -9,8 +9,9 @@ protocol HomePresentationLogic {
     func presentiInitialView()
     func presentEmptyView()
     func presentError()
-    func presentItemsList(content: [Any])
+    func presentItemsList(content: SearchResult)
     func presentLoading()
+    func hideLoading()
     func updateView()
 }
 
@@ -31,6 +32,10 @@ class HomePresenter: HomePresentationLogic {
         controller?.setupLoading()
     }
     
+    func hideLoading() {
+        controller?.hideLoading()
+    }
+    
     func presentEmptyView() {
         controller?.setupEmpty()
     }
@@ -39,7 +44,7 @@ class HomePresenter: HomePresentationLogic {
         controller?.setupError()
     }
     
-    func presentItemsList(content: [Any]) {
+    func presentItemsList(content: SearchResult) {
         controller?.setupContent(with: content)
     }
    

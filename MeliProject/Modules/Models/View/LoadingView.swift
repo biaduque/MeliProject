@@ -18,16 +18,10 @@ class LoadingView: UIView {
     
     lazy var spinner: UIActivityIndicatorView = {
         let loading = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
-        loading.tintColor = UIColor.accent
+        loading.tintColor = UIColor.meliYellow
+        loading.color = UIColor.meliYellow
         loading.hidesWhenStopped = true
         return loading
-    }()
-    
-    lazy var image: UIImageView = {
-        let image = UIImageView()
-        image.image = UIImage(named: "loading-content")
-        image.contentMode = .scaleAspectFit
-        return image
     }()
     
     lazy var message: UILabel = {
@@ -48,14 +42,13 @@ class LoadingView: UIView {
     }
     
     public func start() {
+        message.isHidden = false
         spinner.startAnimating()
     }
     
     public func stop() {
         spinner.stopAnimating()
         message.isHidden = true
-        image.isHidden = true
-        self.removeFromSuperview()
     }
 }
 
@@ -68,7 +61,6 @@ extension LoadingView: BaseViewProtocol {
     func setupHierarchy() {
         addSubview(stackView)
         stackView.addArrangedSubview(spinner)
-        stackView.addArrangedSubview(image)
         stackView.addArrangedSubview(message)
     }
     
@@ -79,16 +71,13 @@ extension LoadingView: BaseViewProtocol {
         spinner.snp.makeConstraints { make in
             make.height.width.equalTo(50)
         }
-        image.snp.makeConstraints { make in
-            make.height.equalTo(200)
-            make.width.equalTo(160)
-        }
+
         message.snp.makeConstraints { make in
             make.height.equalTo(30)
         }
     }
     
     func aditionalSetups() {
-        backgroundColor = .purple
+        
     }
 }

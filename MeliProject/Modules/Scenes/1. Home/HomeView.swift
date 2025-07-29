@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 protocol HomeViewDelegate: AnyObject {
+    func didSearch(item: String)
     func didSelectItem()
     func didRequestedNextPage()
 }
@@ -49,8 +50,8 @@ class HomeView: UIView {
     
     lazy var loadingView: LoadingView = {
         let loading = LoadingView()
-        loading.isHidden = false
-        loading.start()
+        loading.isHidden = true
+        loading.stop()
         return loading
     }()
     
@@ -69,18 +70,17 @@ class HomeView: UIView {
         self.delegate = delegate
     }
     
-    func setup(content: [Any]) {
-        loadingView.stop()
+    func setup(content: SearchResult) {
         emptyView.hide()
         
-        guard var contentList = homeViewModel.items else {
+        guard var contentList = homeViewModel.items?.results else {
             homeViewModel.items = content
             return
         }
         
         searchState = .topViewSearch
-        contentList += content
-        homeViewModel.items = contentList
+        contentList += content.results
+        homeViewModel.items?.results = contentList
     }
     
 
@@ -98,7 +98,13 @@ extension HomeView: StatusChangeProtocol {
     }
     
     func setupLoading() {
+        loadingView.isHidden = false
         loadingView.start()
+    }
+    
+    func hideLoading() {
+        loadingView.isHidden = true
+        loadingView.stop()
     }
     
     func setupEmpty() {
@@ -124,6 +130,7 @@ extension HomeView: BaseViewProtocol {
     func setupHierarchy() {
         addSubview(searchField)
         addSubview(contentTableView)
+        addSubview(loadingView)
     }
     
     func setupConstraints() {
@@ -148,6 +155,12 @@ extension HomeView: BaseViewProtocol {
         searchField.snp.makeConstraints { make in
             self.searchFieldTopConstraint = make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(16).constraint
         }
+        
+        loadingView.snp.makeConstraints { make in
+            make.centerX.centerY.width.equalToSuperview()
+            make.height.equalTo(300)
+        }
+        
         contentTableView.isHidden = false
         animate()
     }
@@ -159,16 +172,19 @@ extension HomeView: BaseViewProtocol {
 
 extension HomeView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return homeViewModel.items?.count ?? 0
+        return homeViewModel.items?.results.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell: ItemViewCell = tableView.dequeueReusableCell(withIdentifier: ItemViewCell.identifier, for: indexPath) as? ItemViewCell else { return UITableViewCell() }
         
-        guard let items = homeViewModel.items else { return UITableViewCell() }
+        guard let items = homeViewModel.items?.results else { return UITableViewCell() }
         if !items.isEmpty {
             let item = items[indexPath.row]
-            cell.setupContent(itemName: "")
+            cell.setupContent(itemName: item.title,
+                              value: String(item.price),
+                              payment: item.buyingMode ?? "")
+            cell.setupItemImage(url: item.permalink ?? "")
             cell.setupView()
         }
         return cell
@@ -189,9 +205,9 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let items = homeViewModel.items else { return }
+        guard let items = homeViewModel.items?.results else { return }
         
-        if indexPath.row == items.count - 2 {
+        if indexPath.row == items.count - 2 && indexPath.row != 0 {
             delegate?.didRequestedNextPage()
         }
     }
@@ -199,7 +215,7 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
 
 extension HomeView: SearchFieldDelegate {
     func didSearch(state: SearchState,text: String) {
-        print("BUSCAR")
+        delegate?.didSearch(item: text)
     }
     
     func showResults() {
