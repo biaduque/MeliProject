@@ -11,14 +11,22 @@ import UIKit
 class ItemViewCell: UITableViewCell {
     static var identifier = "item-view-cell"
     
-    lazy var itemName: UILabel = {
-        let name = DSLabel.titleStyle
-        name.text = "Nome do item"
-        return name
+    lazy var itemImage: UIImageView =  {
+        let image = UIImageView()
+        image.image = UIImage(named: "empty-image")
+        image.clipsToBounds = true
+        image.contentMode = .scaleAspectFill
+        image.backgroundColor = UIColor.backgroundPrimary
+        return image
     }()
     
-    func setupContent(itemName: String, description: String, forks: Int, stars: Int) {
-        self.itemName.text = itemName
+    lazy var itemInfos: ItemInfosView = {
+        let view: ItemInfosView = ItemInfosView()
+        return view
+    }()
+    
+    func setupContent(itemName: String) {
+        itemInfos.setupContent(name: "", value: "", payment: "", shipping: true)
     }
 }
 
@@ -30,13 +38,22 @@ extension ItemViewCell: BaseViewProtocol {
     }
     
     func setupHierarchy() {
-        addSubview(itemName)
-  
+        addSubview(itemImage)
+        addSubview(itemInfos)
     }
     
     func setupConstraints() {
-        itemName.snp.makeConstraints { make in
+        itemImage.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.height.width.equalTo(100)
             make.leading.top.equalToSuperview().offset(20)
+        }
+        
+        itemInfos.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(10)
+            make.leading.equalTo(itemImage.snp.trailing).offset(10)
+            make.trailing.equalToSuperview()
+            make.height.equalTo(100)
         }
     }
     

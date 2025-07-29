@@ -22,6 +22,7 @@ class SearchTextFieldView: UIView {
             }
         }
     }
+    
     weak var delegate: SearchFieldDelegate?
     
     lazy var stackView: UIStackView = {

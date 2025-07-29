@@ -32,14 +32,12 @@ class HomeView: UIView {
         return field
     }()
     
-    lazy var contentTableView: UITableView = {
-        let table = UITableView()
+    lazy var contentTableView: ItemsTableView = {
+        let table = ItemsTableView()
         table.register(ItemViewCell.self, forCellReuseIdentifier: ItemViewCell.identifier)
         table.isHidden = true
         table.delegate = self
         table.dataSource = self
-        table.rowHeight = 120
-        table.backgroundColor = .clear
         return table
     }()
     
@@ -133,12 +131,12 @@ extension HomeView: BaseViewProtocol {
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(20)
             make.height.equalTo(100)
-            searchFieldTopConstraint = make.centerY.equalToSuperview().constraint
+            searchFieldTopConstraint = make.centerY.equalToSuperview().inset(20).constraint
         }
         
         contentTableView.snp.makeConstraints { make in
             make.top.equalTo(searchField.snp.bottom).offset(16)
-            make.leading.trailing.bottom.equalToSuperview()
+            make.leading.trailing.bottom.equalToSuperview().inset(20)
         }
     }
     
@@ -170,6 +168,7 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
         guard let items = homeViewModel.items else { return UITableViewCell() }
         if !items.isEmpty {
             let item = items[indexPath.row]
+            cell.setupContent(itemName: "")
             cell.setupView()
         }
         return cell
@@ -200,7 +199,6 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
 
 extension HomeView: SearchFieldDelegate {
     func didSearch(state: SearchState,text: String) {
-        self.searchState = state
         print("BUSCAR")
     }
     
