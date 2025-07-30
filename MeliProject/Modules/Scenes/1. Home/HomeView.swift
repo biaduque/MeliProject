@@ -46,6 +46,7 @@ class HomeView: UIView {
     lazy var emptyView: EmptyListView = {
         let view = EmptyListView()
         view.isHidden = true
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
@@ -53,6 +54,7 @@ class HomeView: UIView {
         let loading = LoadingView()
         loading.isHidden = true
         loading.stop()
+        loading.translatesAutoresizingMaskIntoConstraints = false
         return loading
     }()
     
@@ -140,13 +142,16 @@ extension HomeView: BaseViewProtocol {
         searchField.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(20)
-            make.height.equalTo(100)
             searchFieldTopConstraint = make.centerY.equalToSuperview().inset(20).constraint
         }
         
         contentTableView.snp.makeConstraints { make in
             make.top.equalTo(searchField.snp.bottom).offset(16)
             make.leading.trailing.bottom.equalToSuperview().inset(20)
+        }
+        
+        emptyView.snp.makeConstraints { make in
+            make.centerX.centerY.width.equalToSuperview()
         }
     }
     
@@ -161,12 +166,6 @@ extension HomeView: BaseViewProtocol {
         
         loadingView.snp.makeConstraints { make in
             make.centerX.centerY.width.equalToSuperview()
-            make.height.equalTo(300)
-        }
-        
-        emptyView.snp.makeConstraints { make in
-            make.centerX.centerY.width.equalToSuperview()
-            make.height.equalTo(300)
         }
         
         contentTableView.isHidden = false

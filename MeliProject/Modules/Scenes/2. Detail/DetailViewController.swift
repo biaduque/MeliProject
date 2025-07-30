@@ -52,7 +52,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        styleView?.updateTableStyle()
+        //styleView?.updateTableStyle()
     }
     
     // MARK: Suport functions

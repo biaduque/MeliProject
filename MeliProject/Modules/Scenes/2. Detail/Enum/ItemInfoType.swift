@@ -31,14 +31,14 @@ enum ItemInfoType: Int, CaseIterable {
     
     var icon: String {
         switch self {
-        case .title: return "tag.fill" // Ou "text.bubble.fill"
-        case .price: return "dollarsign.circle.fill" // Ou "banknote.fill"
-        case .originalPrice: return "dollarsign.circle" // Versão outline para indicar menos proeminência
-        case .condition: return "sparkle.magnifyingglass" // Para "novo" ou "usado"
-        case .availability: return "shippingbox.fill" // Para estoque
-        case .freeShipping: return "truck.box.fill" // Para frete grátis
-        case .sellerInfo: return "person.crop.circle.fill" // Para informações do vendedor
-        case .attributes: return "checklist.checked" // Para especificações/características
+        case .title: return "tag.fill"
+        case .price: return "dollarsign.circle.fill"
+        case .originalPrice: return "dollarsign.circle"
+        case .condition: return "sparkles"
+        case .availability: return "shippingbox.fill"
+        case .freeShipping: return "truck.box.fill"
+        case .sellerInfo: return "person.crop.circle.fill"
+        case .attributes: return "checklist.checked"
         }
     }
     
@@ -114,7 +114,7 @@ enum ItemInfoType: Int, CaseIterable {
         case .attributes:
             return 150
         default:
-            return 75
+            return 65
         }
     }
 }
