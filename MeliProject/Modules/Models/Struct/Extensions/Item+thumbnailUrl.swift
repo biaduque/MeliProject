@@ -26,7 +26,7 @@ extension Item {
         
         
         
-        let urlString = "https://http2.mlstatic.com/D_\(prefix)-\(imageId)-T.jpg"
+        let urlString = "https://http2.mlstatic.com/D_NQ_NP_2X_\(prefix)-\(imageId)-T.jpg"
         return urlString
     }
 

@@ -39,7 +39,7 @@ class DetailInfosViewCell: UITableViewCell {
             print("Erro: Ícone SF Symbol '\(systemName)' não encontrado.")
             icon.image = UIImage(systemName: "questionmark.circle.fill")
         }
-        icon.tintColor = UIColor.title
+        icon.tintColor = UIColor.meliYellow
         icon.contentMode = .scaleAspectFit
         let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .regular)
         icon.preferredSymbolConfiguration = config

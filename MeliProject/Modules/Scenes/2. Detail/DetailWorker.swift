@@ -11,7 +11,8 @@ import UIKit
 protocol DetailWorkingProtocol: AnyObject {
     func getDetail(with id: String) -> Observable<Item>
 }
-
+/// **DetailWorker**
+/// Responsável por realizar o GET da url do detalhe do produto  de acordo com o id passado
 class DetailWorker: DetailWorkingProtocol {
     var session: URLSession = URLSession.shared
     

@@ -13,10 +13,10 @@ extension Item {
             id: "MLB1234567890",
             title: "Apple iPhone 13 (128 GB) – Estelar",
             condition: "new",
-            thumbnailID: "876543-MLA51571477742_092022",
+            thumbnailID: "736168-MLA47781742030_102021",
             catalogProductID: "MLB20625902",
             listingTypeID: "GOLD_PRO",
-            permalink: "https://articulo.mercadolivre.com.br/MLB-1234567890-apple-iphone-13-128-gb-estelar-_JM",
+            permalink: "https://www.mercadolivre.com.br/iphone-13-dual-sim-256-gb-estelar-novo-com-caixa-aberta/p/MLB2016198734#polycard_client=search-nordic&searchVariation=MLB2016198734&wid=MLB5507112276&position=4&search_layout=stack&type=product&tracking_id=0a3dc8d2-04ee-4f90-89fe-aebf915c94d3&sid=search",
             buyingMode: "buy_it_now",
             siteID: "MLB",
             categoryID: "MLB1055",
@@ -42,8 +42,8 @@ extension Item {
             ],
             differentialPricing: DifferentialPricing(id: 12345678),
             pictures: [
-                Picture(id: "876543-MLA51571477742_092022", url: "https://http2.mlstatic.com/D_876543-MLA51571477742_092022-O.jpg", secureURL: "https://http2.mlstatic.com/D_876543-MLA51571477742_092022-O.jpg", size: "500x500", maxSize: "1200x1200", quality: "80"),
-                Picture(id: "987654-MLA51571477742_092022", url: "https://http2.mlstatic.com/D_987654-MLA51571477742_092022-O.jpg", secureURL: "https://http2.mlstatic.com/D_987654-MLA51571477742_092022-O.jpg", size: "500x500", maxSize: "1200x1200", quality: "80")
+                Picture(id: "736168-MLA47781742030_102021", url: "https://http2.mlstatic.com/D_NQ_NP_2X_736168-MLA47781742030_102021-T.jpg", secureURL: "https://http2.mlstatic.com/D_876543-MLA51571477742_092022-O.jpg", size: "500x500", maxSize: "1200x1200", quality: "80"),
+                Picture(id: "736168-MLA47781742030_102021", url: "https://http2.mlstatic.com/D_987654-MLA51571477742_092022-O.jpg", secureURL: "https://http2.mlstatic.com/D_987654-MLA51571477742_092022-O.jpg", size: "500x500", maxSize: "1200x1200", quality: "80")
             ],
             acceptsMercadopago: true,
             status: "active",
@@ -65,10 +65,10 @@ extension Item {
                 id: "MLB1234567890",
                 title: "Apple iPhone 13 (128 GB) – Estelar",
                 condition: "new",
-                thumbnailID: "876543-MLA51571477742_092022",
+                thumbnailID: "736168-MLA47781742030_102021",
                 catalogProductID: "MLB20625902",
                 listingTypeID: "GOLD_PRO",
-                permalink: "https://articulo.mercadolivre.com.br/MLB-1234567890-apple-iphone-13-128-gb-estelar-_JM",
+                permalink: "https://www.mercadolivre.com.br/iphone-13-dual-sim-256-gb-estelar-novo-com-caixa-aberta/p/MLB2016198734#polycard_client=search-nordic&searchVariation=MLB2016198734&wid=MLB5507112276&position=4&search_layout=stack&type=product&tracking_id=0a3dc8d2-04ee-4f90-89fe-aebf915c94d3&sid=search",
                 buyingMode: "buy_it_now",
                 siteID: "MLB",
                 categoryID: "MLB1055",
@@ -95,8 +95,8 @@ extension Item {
                 ],
                 differentialPricing: DifferentialPricing(id: 12345678),
                 pictures: [
-                    Picture(id: "876543-MLA51571477742_092022", url: "https://http2.mlstatic.com/D_876543-MLA51571477742_092022-O.jpg", secureURL: "https://http2.mlstatic.com/D_876543-MLA51571477742_092022-O.jpg", size: "500x500", maxSize: "1200x1200", quality: "80"),
-                    Picture(id: "987654-MLA51571477742_092022", url: "https://http2.mlstatic.com/D_987654-MLA51571477742_092022-O.jpg", secureURL: "https://http2.mlstatic.com/D_987654-MLA51571477742_092022-O.jpg", size: "500x500", maxSize: "1200x1200", quality: "80")
+                    Picture(id: "736168-MLA47781742030_102021", url: "https://http2.mlstatic.com/D_NQ_NP_2X_736168-MLA47781742030_102021-T.jpg", secureURL: "https://http2.mlstatic.com/D_876543-MLA51571477742_092022-O.jpg", size: "500x500", maxSize: "1200x1200", quality: "80"),
+                    Picture(id: "736168-MLA47781742030_102021", url: "https://http2.mlstatic.com/D_987654-MLA51571477742_092022-O.jpg", secureURL: "https://http2.mlstatic.com/D_987654-MLA51571477742_092022-O.jpg", size: "500x500", maxSize: "1200x1200", quality: "80")
                 ],
                 acceptsMercadopago: true,
                 status: "active",
@@ -112,12 +112,12 @@ extension Item {
             
             Item(
                 id: "MLB0987654321",
-                title: "Apple iPhone 14 Pro (256 GB) – Roxo-profundo",
+                title: "Apple iPhone 14 Pro (256 GB) – Gold Premium",
                 condition: "new",
-                thumbnailID: "123456-MLA789012345_012023",
+                thumbnailID: "626715-MLU69495173557_052023",
                 catalogProductID: "MLB20626001",
                 listingTypeID: "GOLD_PREMIUM",
-                permalink: "https://articulo.mercadolivre.com.br/MLB-0987654321-apple-iphone-14-pro-256-gb-roxo-profundo-_JM",
+                permalink: "https://www.mercadolivre.com.br/apple-iphone-14-pro-128-gb-dourado-excelente-recondicionado/p/MLB2000138020#polycard_client=search-nordic&searchVariation=MLB2000138020&wid=MLB4094028187&position=19&search_layout=stack&type=product&tracking_id=35fd4768-9ad6-4efc-98a7-79b81e92967b&sid=search",
                 buyingMode: "buy_it_now",
                 siteID: "MLB",
                 categoryID: "MLB1055",
@@ -144,8 +144,8 @@ extension Item {
                 ],
                 differentialPricing: DifferentialPricing(id: 98765432),
                 pictures: [
-                    Picture(id: "123456-MLA789012345_012023", url: "https://http2.mlstatic.com/D_123456-MLA789012345_012023-O.jpg", secureURL: "https://http2.mlstatic.com/D_123456-MLA789012345_012023-O.jpg", size: "600x600", maxSize: "1500x1500", quality: "85"),
-                    Picture(id: "789012-MLA789012345_012023", url: "https://http2.mlstatic.com/D_789012-MLA789012345_012023-O.jpg", secureURL: "https://http2.mlstatic.com/D_789012-MLA789012345_012023-O.jpg", size: "600x600", maxSize: "1500x1500", quality: "85")
+                    Picture(id: "626715-MLU69495173557_052023", url: "https://http2.mlstatic.com/D_NQ_NP_2X_626715-MLU69495173557_052023-T.jpg", secureURL: "https://http2.mlstatic.com/D_123456-MLA789012345_012023-O.jpg", size: "600x600", maxSize: "1500x1500", quality: "85"),
+                    Picture(id: "626715-MLU69495173557_052023", url: "https://http2.mlstatic.com/D_789012-MLA789012345_012023-O.jpg", secureURL: "https://http2.mlstatic.com/D_789012-MLA789012345_012023-O.jpg", size: "600x600", maxSize: "1500x1500", quality: "85")
                 ],
                 acceptsMercadopago: true,
                 status: "active",

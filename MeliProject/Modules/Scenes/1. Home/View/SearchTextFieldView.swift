@@ -14,7 +14,7 @@ protocol SearchFieldDelegate: AnyObject {
     func showResults()
 }
 
-class SearchTextFieldView: UIView {
+class SearchTextFieldView: UIView, UISearchTextFieldDelegate {
     var lastSearched: String = ""
     var state: SearchState = .initialSearch {
         didSet {
@@ -65,14 +65,19 @@ class SearchTextFieldView: UIView {
         self.removeFromSuperview()
     }
     
+    // MARK: - Ações
     @objc func searchChanged(_ textField: UITextField) {
         if let text = textField.text {
             state = text.isEmpty ? .initialSearch : .topViewSearch
             if lastSearched != text { delegate?.didSearch(state: state, text: text) }
             lastSearched = text
         }
-        
+        textField.resignFirstResponder()
         delegate?.showResults()
+    }
+    
+    @objc private func dismissKeyboard() {
+        self.endEditing(true)
     }
 }
 
@@ -80,7 +85,9 @@ extension SearchTextFieldView: BaseViewProtocol {
     func setupView() {
         setupHierarchy()
         setupConstraints()
+        aditionalSetups()
     }
+    
     func setupHierarchy() {
         addSubview(stackView)
         stackView.addArrangedSubview(searchField)
@@ -104,7 +111,10 @@ extension SearchTextFieldView: BaseViewProtocol {
     }
     
     func aditionalSetups() {
-        //
+        searchField.delegate = self
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tapGesture.cancelsTouchesInView = false
+        self.addGestureRecognizer(tapGesture)
     }
     
     func setupConstraintsForSearch() {

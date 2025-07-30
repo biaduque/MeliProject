@@ -15,7 +15,8 @@ class ItemViewCell: UITableViewCell {
         let image = UIImageView()
         image.image = UIImage(named: "empty-image")
         image.clipsToBounds = true
-        image.contentMode = .scaleAspectFill
+        image.layer.cornerRadius = 10
+        image.contentMode = .scaleAspectFit
         image.backgroundColor = UIColor.backgroundPrimary
         return image
     }()

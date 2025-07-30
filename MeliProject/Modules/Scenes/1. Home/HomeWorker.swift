@@ -9,7 +9,7 @@ import RxSwift
 import UIKit
 
 /// **HomeWorker**
-/// Responsável por realizar o GET da url da lista de reposiórios de acordo com a url passada
+/// Responsável por realizar o GET da url da lista de produtos de acordo com a url passada
 protocol HomeWorkingProtocol: AnyObject {
     func getItemList(searchedItem: String, page: String) -> Observable<SearchResult>
 }
