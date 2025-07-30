@@ -10,22 +10,36 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var authCoordinator: AuthManager?
+    
     /// 🇺🇸 Method used to configure the appCoordinator
     /// 🇧🇷 Método utilizado para configutar o appCoordinator
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let appScene = (scene as? UIWindowScene) else { return }
         
         let mainNavController = UINavigationController()
+
         let rootCoordinatior = MeliProjectCoordinator(with: mainNavController)
-        
+       
         window = UIWindow(windowScene: appScene)
         window?.rootViewController = mainNavController // App root
         window?.makeKeyAndVisible()
         
+        let mlAPIManager = MercadoLivreAPIManager(accessToken: nil)
+        self.authCoordinator = AuthManager(apiManager: mlAPIManager)
+        
         rootCoordinatior.start()
     }
 
+
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        guard let urlContext = URLContexts.first else { return }
+        
+         if urlContext.url.scheme == "meliappcallback" {
+             print("OIII")
+         }
+    }
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

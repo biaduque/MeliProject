@@ -1,0 +1,202 @@
+{
+  "site_id": "MLB",
+  "query": "iphone",
+  "paging": {
+    "total": 12345,
+    "primary_results": 10000,
+    "offset": 0,
+    "limit": 50
+  },
+  "results": [
+    {
+      "id": "MLB1234567890",
+      "title": "Apple iPhone 13 (128 GB) – Estelar",
+      "condition": "new",
+      "thumbnail_id": "876543-MLA51571477742_092022",
+      "catalog_product_id": "MLB20625902",
+      "listing_type_id": "GOLD_PRO",
+      "permalink": "https://articulo.mercadolivre.com.br/MLB-1234567890-apple-iphone-13-128-gb-estelar-_JM",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB1055",
+      "domain_id": "MLB-CELLPHONES",
+      "warranty": "Garantia de fábrica: 1 ano",
+      "currency_id": "BRL",
+      "price": 3899.00,
+      "original_price": 4299.00,
+      "sale_price": null,
+      "available_quantity": 500,
+      "sold_quantity": 1200,
+      "official_store_id": 123,
+      "tags": [
+        "best_seller",
+        "good_quality_picture"
+      ],
+      "installments": {
+        "quantity": 10,
+        "amount": 389.90,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in",
+          "mandatory_free_shipping"
+        ],
+        "logistic_type": "fulfillment"
+      },
+      "stop_time": "2025-12-31T23:59:59.000Z",
+      "seller": {
+        "id": 123456789,
+        "permalink": "http://perfil.mercadolivre.com.br/TEST.SELLER",
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "8724",
+          "value_name": "Apple",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "8724",
+              "name": "Apple",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "iPhone 13",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "iPhone 13",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        }
+      ],
+      "differential_pricing": {
+        "id": 12345678
+      }
+    },
+    {
+      "id": "MLB0987654321",
+      "title": "Apple iPhone 14 Pro (256 GB) – Roxo-profundo",
+      "condition": "new",
+      "thumbnail_id": "123456-MLA789012345_012023",
+      "catalog_product_id": "MLB20626001",
+      "listing_type_id": "GOLD_PREMIUM",
+      "permalink": "https://articulo.mercadolivre.com.br/MLB-0987654321-apple-iphone-14-pro-256-gb-roxo-profundo-_JM",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB1055",
+      "domain_id": "MLB-CELLPHONES",
+      "warranty": "Garantia de fábrica: 1 ano",
+      "currency_id": "BRL",
+      "price": 6199.00,
+      "original_price": 6599.00,
+      "sale_price": null,
+      "available_quantity": 200,
+      "sold_quantity": 800,
+      "official_store_id": 456,
+      "tags": [
+        "good_quality_picture"
+      ],
+      "installments": {
+        "quantity": 12,
+        "amount": 516.58,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": [
+          "self_service_in"
+        ],
+        "logistic_type": "fulfillment"
+      },
+      "stop_time": "2025-11-15T23:59:59.000Z",
+      "seller": {
+        "id": 987654321,
+        "permalink": "http://perfil.mercadolivre.com.br/OUTRO.SELLER",
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "8724",
+          "value_name": "Apple",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "8724",
+              "name": "Apple",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "iPhone 14 Pro",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "iPhone 14 Pro",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        }
+      ],
+      "differential_pricing": {
+        "id": 98765432
+      }
+    }
+  ],
+  "sort": {
+    "id": "relevance",
+    "name": "Mais relevantes"
+  },
+  "available_sorts": [
+    {
+      "id": "relevance",
+      "name": "Mais relevantes"
+    },
+    {
+      "id": "price_asc",
+      "name": "Menor preço"
+    },
+    {
+      "id": "price_desc",
+      "name": "Maior preço"
+    }
+  ],
+  "filters": [],
+  "available_filters": []
+}
