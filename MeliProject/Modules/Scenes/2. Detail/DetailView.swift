@@ -21,8 +21,8 @@ class DetailView: UIView {
         image.image = UIImage(named: "empty-image")
         image.clipsToBounds = true
         image.layer.cornerRadius = 10
-        image.contentMode = .scaleAspectFill
-        image.backgroundColor = UIColor.backgroundPrimary
+        image.contentMode = .scaleAspectFit
+        image.backgroundColor = .white
         return image
     }()
     
@@ -81,7 +81,7 @@ class DetailView: UIView {
     func setupItemInfoImage(content: Item) {
         itemImage.kf.setImage(with: content.mainPictureUrl(),
                               placeholder: UIImage(named: "empty-user-image"))
-        
+        setupView()
         reloadInputViews()
     }
 }
