@@ -12,7 +12,7 @@ import UIKit
 /// Responsável por invocar a **HomePresenter**, que por sua vez, invoca os casos de apresentação de view
 /// que serão disponibilizadas para o usuário de acordo com cada estado: vazio, erro, carregando ou sucesso
 protocol HomeBusinessLogic {
-    func fetchRepoList(page: String)
+    func fetchItemList(search: String, page: String)
 }
 
 class HomeInteractor: HomeBusinessLogic {
@@ -26,8 +26,8 @@ class HomeInteractor: HomeBusinessLogic {
         self.presenter = presenter
     }
     
-    func fetchRepoList(page: String) {
-            worker?.getRepoList(page: page)
+    func fetchItemList(search: String, page: String) {
+            worker?.getItemList(searchedItem: search, page: page)
                 .do(onSubscribe: { [weak self] in
                     self?.presenter?.presentLoading()
                 }, onDispose: { [weak self] in

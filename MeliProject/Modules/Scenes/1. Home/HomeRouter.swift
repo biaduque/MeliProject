@@ -7,7 +7,7 @@
 
 // TO-DO: adicionar modelo para detalhe
 protocol HomeRoutingProtocol: AnyObject {
-    func goToDetail(from repository: Any)
+    func goToDetail(from id: String)
 }
 
 class HomeRouter: HomeRoutingProtocol {
@@ -17,7 +17,7 @@ class HomeRouter: HomeRoutingProtocol {
         self.coordinator = coordinator
     }
     
-    func goToDetail(from repository: Any) {
-        coordinator?.startDetail(with: String.self)
+    func goToDetail(from id: String) {
+        coordinator?.startDetail(with: id)
     }
 }

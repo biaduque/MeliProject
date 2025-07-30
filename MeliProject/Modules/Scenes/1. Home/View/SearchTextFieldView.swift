@@ -44,9 +44,9 @@ class SearchTextFieldView: UIView {
    
     
     lazy var message: UILabel = {
-        let label = DSLabel.captionStyle
+        let label = DSLabel.bodyStyle
         label.text = "O seu buscador de produtos do Mercado Livre :)"
-        label.textColor = UIColor.caption
+        label.textColor = UIColor.title
         label.numberOfLines = 4
         label.textAlignment = .center
         return label
@@ -94,11 +94,11 @@ extension SearchTextFieldView: BaseViewProtocol {
         
         searchField.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview()
-            make.height.equalTo(35)
+            make.height.equalTo(45)
         }
         
         message.snp.makeConstraints { make in
-            make.height.equalTo(80)
+            make.height.equalTo(90)
             make.width.equalTo(searchField.snp.width).multipliedBy(0.5)
         }
     }

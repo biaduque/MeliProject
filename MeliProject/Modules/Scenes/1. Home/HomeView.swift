@@ -35,6 +35,7 @@ class HomeView: UIView {
     
     lazy var contentTableView: ItemsTableView = {
         let table = ItemsTableView()
+        table.setupStyle()
         table.register(ItemViewCell.self, forCellReuseIdentifier: ItemViewCell.identifier)
         table.isHidden = true
         table.delegate = self
@@ -211,6 +212,11 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == items.count - 2 && indexPath.row != 0 {
             delegate?.didRequestedNextPage()
         }
+    }
+    
+    func updateTableStyle() {
+        contentTableView.layer.shadowPath = UIBezierPath(roundedRect: contentTableView.bounds,
+                                                         cornerRadius: contentTableView.layer.cornerRadius).cgPath
     }
 }
 

@@ -8,7 +8,6 @@
 protocol HomeModel {
     var searchResult: SearchResult? { get set }
     var totalResults: Int { get set }
-
 }
 
 struct HomeViewModel: HomeModel {    
