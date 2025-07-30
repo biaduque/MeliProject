@@ -15,9 +15,9 @@ enum ErrorCause {
     func message() -> String {
         switch self {
         case .emptyList:
-            return "Oh, it looks like there is no pull request list for this repository.How about looking for another one?"
+            return "Oh, parece que não encontramos nenhum resultado para essa busca. Que tal tentar outro termo?"
         case .apiError:
-            return "Oh, something went wrong. Try again later."
+            return "Algo deu errado na conexão da sua conta com o Meli. Por favor, tente novamente."
         }
     }
     
@@ -26,7 +26,7 @@ enum ErrorCause {
         case .emptyList:
             return "empty-list"
         case .apiError:
-            return "empty-error"
+            return "api-error"
         }
     }
 }

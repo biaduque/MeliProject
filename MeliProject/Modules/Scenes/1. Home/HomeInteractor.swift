@@ -36,7 +36,13 @@ class HomeInteractor: HomeBusinessLogic {
                 })
                 .subscribe(
                     onNext: { [weak self] itemsResponse in
-                        self?.presenter?.presentItemsList(content: itemsResponse)
+                        guard let self = self else { return }
+                        if (itemsResponse.results.isEmpty || !self.checkIfExists(query: search, items: itemsResponse.results)) {
+                            self.presenter?.presentEmptyView()
+                            return
+                        }
+                        
+                        self.presenter?.presentItemsList(content: itemsResponse)
                     },
                     onError: { [weak self] error in
                         self?.presenter?.presentError()
@@ -44,4 +50,13 @@ class HomeInteractor: HomeBusinessLogic {
                 )
                 .disposed(by: disposeBag)
         }
+    
+    func checkIfExists(query: String, items: [Item]) -> Bool {
+        let lowercasedQuery = query.lowercased()
+        
+        return items.contains { item in
+            let lowercasedTitle = item.title.lowercased()
+            return lowercasedTitle.contains(lowercasedQuery)
+        }
+    }
 }

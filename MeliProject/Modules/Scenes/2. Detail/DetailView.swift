@@ -125,6 +125,7 @@ extension DetailView: BaseViewProtocol {
         addSubview(itemDescription)
         addSubview(contentTableView)
         addSubview(loadingView)
+        addSubview(emptyView)
     }
     
     func setupConstraints() {
@@ -146,6 +147,10 @@ extension DetailView: BaseViewProtocol {
             make.leading.trailing.bottom.equalToSuperview().inset(20)
         }
         loadingView.snp.makeConstraints { make in
+            make.centerX.centerY.width.equalToSuperview()
+            make.height.equalTo(300)
+        }
+        emptyView.snp.makeConstraints { make in
             make.centerX.centerY.width.equalToSuperview()
             make.height.equalTo(300)
         }

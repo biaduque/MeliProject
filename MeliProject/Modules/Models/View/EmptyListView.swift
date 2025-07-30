@@ -28,9 +28,9 @@ class EmptyListView: UIView {
     }()
     
     lazy var message: UILabel = {
-        let label = DSLabel.bodyStyle
-        label.textColor = UIColor.caption
-        label.numberOfLines = 4
+        let label = DSLabel.titleStyle
+        label.textColor = UIColor.title
+        label.numberOfLines = 5
         label.textAlignment = .center
         return label
     }()
@@ -52,7 +52,7 @@ class EmptyListView: UIView {
     }
     
     public func hide() {
-        self.removeFromSuperview()
+        self.isHidden = true
     }
 }
 
@@ -79,7 +79,7 @@ extension EmptyListView: BaseViewProtocol {
         
         message.snp.makeConstraints { make in
             make.height.equalTo(80)
-            make.width.equalTo(image)
+            make.width.equalTo(200)
         }
     }
     

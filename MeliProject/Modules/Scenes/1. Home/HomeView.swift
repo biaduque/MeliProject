@@ -109,6 +109,7 @@ extension HomeView: StatusChangeProtocol {
     }
     
     func setupEmpty() {
+        homeViewModel.searchResult?.results = []
         emptyView.isHidden = false
         emptyView.setEmpty(cause: .emptyList)
         loadingView.stop()
@@ -132,6 +133,7 @@ extension HomeView: BaseViewProtocol {
         addSubview(searchField)
         addSubview(contentTableView)
         addSubview(loadingView)
+        addSubview(emptyView)
     }
     
     func setupConstraints() {
@@ -158,6 +160,11 @@ extension HomeView: BaseViewProtocol {
         }
         
         loadingView.snp.makeConstraints { make in
+            make.centerX.centerY.width.equalToSuperview()
+            make.height.equalTo(300)
+        }
+        
+        emptyView.snp.makeConstraints { make in
             make.centerX.centerY.width.equalToSuperview()
             make.height.equalTo(300)
         }
