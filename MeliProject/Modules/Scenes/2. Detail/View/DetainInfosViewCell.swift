@@ -21,6 +21,7 @@ class DetailInfosViewCell: UITableViewCell {
         label.textColor = UIColor.body
         label.numberOfLines = 0
         label.textAlignment = .left
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -69,7 +70,7 @@ extension DetailInfosViewCell: BaseViewProtocol {
             make.centerY.equalToSuperview()
             make.leading.equalTo(icon.snp.trailing).offset(10)
             make.trailing.equalToSuperview()
-            make.height.equalTo(100)
+            make.bottom.equalToSuperview().inset(-12)
         }
     }
     
