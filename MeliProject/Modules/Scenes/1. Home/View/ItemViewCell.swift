@@ -55,7 +55,7 @@ extension ItemViewCell: BaseViewProtocol {
         itemImage.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.height.width.equalTo(100)
-            make.leading.top.equalToSuperview().offset(20)
+            make.leading.top.equalToSuperview().offset(10)
         }
         
         itemInfos.snp.makeConstraints { make in

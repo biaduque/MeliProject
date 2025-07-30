@@ -101,7 +101,7 @@ extension SearchTextFieldView: BaseViewProtocol {
         
         searchField.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview()
-            make.height.equalTo(45)
+            make.height.equalTo(40)
         }
         
         message.snp.makeConstraints { make in
@@ -121,7 +121,7 @@ extension SearchTextFieldView: BaseViewProtocol {
         message.removeFromSuperview()
         
         self.snp.makeConstraints { make in
-            make.height.equalTo(35)
+            make.height.equalTo(40)
         }
         
         self.layoutIfNeeded()

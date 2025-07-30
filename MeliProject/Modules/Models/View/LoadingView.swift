@@ -12,7 +12,7 @@ class LoadingView: UIView {
         stack.axis = .vertical
         stack.alignment = .center
         stack.spacing = 4
-        stack.distribution = .fillProportionally
+        stack.distribution = .equalCentering
         return stack
     }()
     
@@ -68,6 +68,7 @@ extension LoadingView: BaseViewProtocol {
         stackView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+        
         spinner.snp.makeConstraints { make in
             make.height.width.equalTo(50)
         }

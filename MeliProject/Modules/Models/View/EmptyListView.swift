@@ -16,7 +16,7 @@ class EmptyListView: UIView {
         stack.axis = .vertical
         stack.alignment = .center
         stack.spacing = 4
-        stack.distribution = .fillProportionally
+        stack.distribution = .equalCentering
         return stack
     }()
     
@@ -79,7 +79,8 @@ extension EmptyListView: BaseViewProtocol {
         
         message.snp.makeConstraints { make in
             make.height.equalTo(80)
-            make.width.equalTo(200)
+            make.leading.trailing.equalToSuperview().inset(20)
+            make.centerX.equalToSuperview()
         }
     }
     
