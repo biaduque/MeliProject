@@ -40,8 +40,5 @@ class DetailInteractor: DetailBusinessLogic {
             )
             .disposed(by: disposeBag)
     }
-    
-    func calledPullRequestDetail(url: String) {
-        presenter?.presentDetailModal(url: url)
-    }
+
 }

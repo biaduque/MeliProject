@@ -7,7 +7,6 @@
 
 
 protocol DetailPresentationLogic {
-    func presentDetailModal(url: String)
     func presentEmptyView()
     func presentError()
     func presentDetail(content: Item)
@@ -25,10 +24,6 @@ class DetailPresenter: DetailPresentationLogic {
     
     func presentDetail(content: Item) {
         controller?.setupContent(with: content)
-    }
-    
-    func presentDetailModal(url: String) {
-       
     }
     
     func presentEmptyView() {

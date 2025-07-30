@@ -7,6 +7,7 @@
 
 protocol DetailRoutingProtocol: AnyObject {
     func routeBackToHome()
+    func routeToBuyProduct(url: String)
 }
 
 class DetailRouter: DetailRoutingProtocol {
@@ -19,4 +20,9 @@ class DetailRouter: DetailRoutingProtocol {
     func routeBackToHome() {
         self.coordinator?.back()
     }
+    
+    func routeToBuyProduct(url: String) {
+        self.coordinator?.startBuyProduct(with: url)
+    }
+    
 }
