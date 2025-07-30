@@ -46,7 +46,7 @@ class HomeWorker: HomeWorkingProtocol {
                     
                 } catch {
                     /// Chamar mock provisório
-                    observer.onNext(AuthManager.mockiPhoneSearch())
+                    observer.onNext(SearchResult.mockiPhoneSearchResults())
                     observer.onCompleted()
                     /// Chamar erro caso não consiga buscar os itens
                     observer.onError(error)

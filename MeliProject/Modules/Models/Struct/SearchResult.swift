@@ -14,7 +14,7 @@ struct SearchResult: Codable {
     let siteID: String?
     let query: String?
     let paging: Paging // Informações de paginação
-    let results: [Item] // Array de itens encontrados
+    var results: [Item] // Array de itens encontrados (criado como "var" para ser incrementado na paginacao)
     let sort: Sort?
     let availableSorts: [Sort]?
     let filters: [Filter]?

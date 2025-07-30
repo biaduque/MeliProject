@@ -10,7 +10,7 @@ import SnapKit
 
 protocol HomeViewDelegate: AnyObject {
     func didSearch(item: String)
-    func didSelectItem()
+    func didSelectItem(id: String)
     func didRequestedNextPage()
 }
 
@@ -73,14 +73,14 @@ class HomeView: UIView {
     func setup(content: SearchResult) {
         emptyView.hide()
         
-        guard var contentList = homeViewModel.items?.results else {
-            homeViewModel.items = content
+        guard var contentList = homeViewModel.searchResult?.results else {
+            homeViewModel.searchResult = content
             return
         }
         
         searchState = .topViewSearch
         contentList += content.results
-        homeViewModel.items?.results = contentList
+        homeViewModel.searchResult?.results = contentList
     }
     
 
@@ -172,27 +172,28 @@ extension HomeView: BaseViewProtocol {
 
 extension HomeView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return homeViewModel.items?.results.count ?? 0
+        return homeViewModel.searchResult?.results.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell: ItemViewCell = tableView.dequeueReusableCell(withIdentifier: ItemViewCell.identifier, for: indexPath) as? ItemViewCell else { return UITableViewCell() }
         
-        guard let items = homeViewModel.items?.results else { return UITableViewCell() }
+        guard let items = homeViewModel.searchResult?.results else { return UITableViewCell() }
         if !items.isEmpty {
             let item = items[indexPath.row]
             cell.setupContent(itemName: item.title,
                               value: String(item.price),
                               payment: item.buyingMode ?? "")
-            cell.setupItemImage(url: item.permalink ?? "")
+
+            cell.setupItemImage(url: item.thumbnailUrl())
             cell.setupView()
         }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let items = homeViewModel.items else { return }
-        delegate?.didSelectItem()
+        guard let item: Item = homeViewModel.searchResult?.results[indexPath.row] else { return }
+        delegate?.didSelectItem(id: item.id)
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
@@ -205,7 +206,7 @@ extension HomeView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let items = homeViewModel.items?.results else { return }
+        guard let items = homeViewModel.searchResult?.results else { return }
         
         if indexPath.row == items.count - 2 && indexPath.row != 0 {
             delegate?.didRequestedNextPage()

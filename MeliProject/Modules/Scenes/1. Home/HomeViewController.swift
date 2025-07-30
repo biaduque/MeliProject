@@ -101,8 +101,8 @@ extension HomeViewController: HomeViewDelegate {
         interactor?.fetchRepoList(page: String(page))
     }
     
-    func didSelectItem() {
-        print("Selecionou item")
+    func didSelectItem(id: String) {
+        print("Selecionou item:::", id)
     }
     
     func didRequestedNextPage() {
