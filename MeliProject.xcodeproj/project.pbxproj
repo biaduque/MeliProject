@@ -41,32 +41,17 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
-				Modules/Models/Mocks/iphone_search_mock.json,
 			);
 			target = 13EF745E2E37FA210096549E /* MeliProject */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		1325608F2E3911BD00ED0E45 /* Exceptions for "MeliProject" folder in "Compile Sources" phase from "MeliProject" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 13EF745B2E37FA210096549E /* Sources */;
-			membershipExceptions = (
-				Modules/Models/Mocks/iphone_search_mock.json,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		13EF74612E37FA210096549E /* MeliProject */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				13EF748A2E37FA250096549E /* Exceptions for "MeliProject" folder in "MeliProject" target */,
-				1325608F2E3911BD00ED0E45 /* Exceptions for "MeliProject" folder in "Compile Sources" phase from "MeliProject" target */,
 			);
-			explicitFileTypes = {
-				Modules/Models/Mocks/iphone_search_mock.json = text.json;
-			};
 			path = MeliProject;
 			sourceTree = "<group>";
 		};

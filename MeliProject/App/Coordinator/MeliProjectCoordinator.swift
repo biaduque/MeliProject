@@ -13,8 +13,7 @@ import UIKit
 protocol Coordinator: AnyObject {
     var navigationController: UINavigationController { get set }
     func start()
-    // TO-DO: Adicionar modelo para request
-    func startDetail(with request: Any)
+    func startDetail(with requestId: String)
     func back()
 }
 
@@ -23,6 +22,8 @@ class MeliProjectCoordinator: Coordinator {
     
     init(with navigationController: UINavigationController) {
         self.navigationController = navigationController
+        navigationController.navigationBar.backgroundColor = UIColor.meliYellow
+        setupNavigationBar()
     }
     
     /// InitialViewController
@@ -35,14 +36,28 @@ class MeliProjectCoordinator: Coordinator {
     }
     
     ///
-    /// **RepoDetailViewController*
+    /// **DetailViewController*
     /// Controller que exibe a lista de pull requests dado um repositório selecionado
-    func startDetail(with request: Any) {
-        let viewController = UIViewController()
+    func startDetail(with requestId: String) {
+        let viewController = DetailFactory.makeController(with: self,
+                                                          aditionalInfos: requestId)
         navigationController.pushViewController(viewController, animated: true)
     }
     
     func back() {
         navigationController.popViewController(animated: true)
     }
+    
+    
+    func setupNavigationBar() {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+
+            appearance.backgroundColor = UIColor.meliYellow
+            appearance.titleTextAttributes = [.foregroundColor: UIColor.body]
+            appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.body]
+
+            navigationController.navigationBar.standardAppearance = appearance
+            navigationController.navigationBar.scrollEdgeAppearance = appearance
+        }
 }

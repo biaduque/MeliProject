@@ -1,25 +1,28 @@
 //
-//  HomeViewController.swift
+//  DetailViewController.swift
 //  MeliProject
 //
-//  Created by Beatriz Duque on 28/07/25.
+//  Created by Beatriz Duque on 30/07/25.
 //
+
 
 import UIKit
 import RxSwift
 
-class HomeViewController: UIViewController {
-    var styleView: HomeView?
-    var router: HomeRoutingProtocol?
-    var interactor: HomeBusinessLogic?
+class DetailViewController: UIViewController {
+    var styleView: DetailView?
+    var router: DetailRoutingProtocol?
+    var interactor: DetailBusinessLogic?
     var authManager: AuthManager?
+    
+    let detailId: String
     
     private var page: Int = 1
     
     // MARK: Init
-    init(view: HomeView) {
+    init(view: DetailView, id: String) {
         styleView = view
-        
+        detailId = id 
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -34,13 +37,13 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupController()
+        
+        interactor?.fetchDetail(id: self.detailId)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     override func viewDidLayoutSubviews() {
@@ -53,27 +56,24 @@ class HomeViewController: UIViewController {
         self.authManager = auth
     }
     
-    func setup(router: HomeRoutingProtocol) {
+    func setup(router: DetailRoutingProtocol) {
         self.router = router
     }
     
-    func setup(interactor: HomeBusinessLogic) {
+    func setup(interactor: DetailBusinessLogic) {
         self.interactor = interactor
     }
     
     func setupController() {
+        navigationController?.navigationBar.prefersLargeTitles = false
         styleView?.setup(delegate: self)
-        
-//        if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
-//            sceneDelegate.authCoordinator?.startMercadoLivreAuth()
-//        }
     }
 }
 
 // MARK: Presenter functions
-extension HomeViewController: ContentControllerProtocol {
-    func setupContent(with list: SearchResult) {
-        styleView?.setup(content: list)
+extension DetailViewController: ContentControllerProtocol {
+    func setupContent(with itemDetail: Item) {
+        styleView?.setup(content: itemDetail)
     }
     
     func setupEmpty() {
@@ -98,19 +98,8 @@ extension HomeViewController: ContentControllerProtocol {
 }
 
 // MARK: Extensions
-extension HomeViewController: HomeViewDelegate {
-    func didSearch(item: String) {
-        print("buscou:::", item)
-        interactor?.fetchItemList(search: item, page: String(page))
-    }
-    
-    func didSelectItem(id: String) {
-        print("Selecionou item:::", id)
-        router?.goToDetail(from: id)
-    }
-    
-    func didRequestedNextPage() {
-        page+=1
-        interactor?.fetchItemList(search: "", page: String(page))
+extension DetailViewController: DetailViewDelegate {
+    func didSelectSeeMore() {
+        print("Selecionou ver mais")
     }
 }

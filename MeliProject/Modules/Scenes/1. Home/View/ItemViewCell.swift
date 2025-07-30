@@ -5,7 +5,6 @@
 //  Created by Beatriz Duque on 28/07/25.
 //
 
-
 import UIKit
 import Kingfisher
 
@@ -62,7 +61,6 @@ extension ItemViewCell: BaseViewProtocol {
             make.top.equalToSuperview().inset(10)
             make.leading.equalTo(itemImage.snp.trailing).offset(10)
             make.trailing.equalToSuperview()
-            make.height.equalTo(100)
         }
     }
     

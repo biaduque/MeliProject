@@ -6,12 +6,11 @@
 //
 
 protocol HomeModel {
-    var items: SearchResult? { get set }
+    var searchResult: SearchResult? { get set }
     var totalResults: Int { get set }
-
 }
 
 struct HomeViewModel: HomeModel {    
-    var items: SearchResult?
+    var searchResult: SearchResult?
     var totalResults: Int = 0
 }

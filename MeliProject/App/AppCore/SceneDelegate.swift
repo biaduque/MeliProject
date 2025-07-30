@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = mainNavController // App root
         window?.makeKeyAndVisible()
         
-        let mlAPIManager = MercadoLivreAPIManager(accessToken: nil)
+        let mlAPIManager = MeliAPIManager(accessToken: nil)
         self.authCoordinator = AuthManager(apiManager: mlAPIManager)
         
         rootCoordinatior.start()

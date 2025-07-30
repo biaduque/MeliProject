@@ -7,7 +7,7 @@
 
 // MARK: - Modelo de Item
 /// **Item**:
-/// Corresponde a: GET /items/{ITEM_ID} (diretamente)
+/// Corresponde a: GET /items/{ITEM_ID} 
 /// E também é um elemento do array 'results' em SearchResults
 /// Usado tanto na Busca quanto nos Detalhes do Item
 /// Doc:  https://developers.mercadolivre.com.br/pt_br/publicacao-de-produtos

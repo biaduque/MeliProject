@@ -1,30 +1,27 @@
 //
-//  HomeWorker.swift
+//  DetailWorker.swift
 //  MeliProject
 //
-//  Created by Beatriz Duque on 28/07/25.
+//  Created by Beatriz Duque on 30/07/25.
 //
 
 import RxSwift
 import UIKit
 
-/// **HomeWorker**
-/// Responsável por realizar o GET da url da lista de reposiórios de acordo com a url passada
-protocol HomeWorkingProtocol: AnyObject {
-    func getItemList(searchedItem: String, page: String) -> Observable<SearchResult>
+protocol DetailWorkingProtocol: AnyObject {
+    func getDetail(with id: String) -> Observable<Item>
 }
 
-class HomeWorker: HomeWorkingProtocol {
-    let session: URLSession = URLSession.shared
-    let imageCache = NSCache<NSNumber, UIImage>()
+class DetailWorker: DetailWorkingProtocol {
+    var session: URLSession = URLSession.shared
     
-    func getItemList(searchedItem: String, page: String) -> Observable<SearchResult> {
-        guard let request = ItemRequest.configuteRequest(itemSearched: searchedItem) else {
-            return Observable.error(NSError(domain: "Invalid Request", code: -1, userInfo: nil))
+    func getDetail(with id: String) -> Observable<Item> {
+        guard let url = DetailRequest.bindUrl(id: id) else {
+            return Observable.error(NSError(domain: "Invalid URL", code: -1, userInfo: nil))
         }
         
         return Observable.create { [weak self] observer -> Disposable in
-            let task = self?.session.dataTask(with: request) { data, response, error in
+            let task = self?.session.dataTask(with: url) { data, response, error in
                 
                 if let error = error {
                     observer.onError(error)
@@ -37,16 +34,15 @@ class HomeWorker: HomeWorkingProtocol {
                 }
                 
                 do {
-                    let decoder = JSONDecoder()
-                    decoder.keyDecodingStrategy = .convertFromSnakeCase
-                    let response = try decoder.decode(SearchResult.self, from: data)
-                    print("RES >>> ", response)
+                    let response = try JSONDecoder().decode(Item.self, from: data)
                     observer.onNext(response)
                     observer.onCompleted()
                     
                 } catch {
                     /// Chamar mock provisório
-                    observer.onNext(SearchResult.mockiPhoneSearchResults())
+                    observer.onNext(Item.mockiPhoneDetails().first(where: { item in
+                        item.id == id
+                    }) ?? Item.mockiPhone13Detail())
                     observer.onCompleted()
                     /// Chamar erro caso não consiga buscar os itens
                     observer.onError(error)
@@ -63,3 +59,4 @@ class HomeWorker: HomeWorkingProtocol {
         .observe(on: MainScheduler.instance)
     }
 }
+
