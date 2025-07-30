@@ -40,15 +40,16 @@ class HomeWorker: HomeWorkingProtocol {
                     let decoder = JSONDecoder()
                     decoder.keyDecodingStrategy = .convertFromSnakeCase
                     let response = try decoder.decode(SearchResult.self, from: data)
-                    
-                    print(response)
+                    print("RES >>> ", response)
                     observer.onNext(response)
                     observer.onCompleted()
                     
                 } catch {
+                    /// Chamar mock provisório
                     observer.onNext(AuthManager.mockiPhoneSearch())
                     observer.onCompleted()
-                    //observer.onError(error)
+                    /// Chamar erro caso não consiga buscar os itens
+                    observer.onError(error)
                 }
             }
             

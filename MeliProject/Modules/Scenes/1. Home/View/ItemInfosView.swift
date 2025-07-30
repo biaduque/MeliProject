@@ -22,7 +22,7 @@ class ItemInfosView: UIView {
     lazy var itemName: UILabel = {
         let label = DSLabel.titleStyle
         label.textColor = UIColor.body
-        label.numberOfLines = 4
+        label.numberOfLines = 2
         label.textAlignment = .left
         return label
     }()
@@ -30,21 +30,21 @@ class ItemInfosView: UIView {
     lazy var itemValue: UILabel = {
         let label = DSLabel.LargetitleStyleBold
         label.textColor = UIColor.body
-        label.numberOfLines = 4
+        label.numberOfLines = 0
         label.textAlignment = .left
         return label
     }()
     
     lazy var itemPaymentConditions: UILabel = {
         let label = DSLabel.highlightStyle
-        label.numberOfLines = 4
+        label.numberOfLines = 0
         label.textAlignment = .left
         return label
     }()
     
     lazy var freeShipping: UILabel = {
         let label = DSLabel.highlightStyleBold
-        label.numberOfLines = 4
+        label.numberOfLines = 0
         label.text = "Frete grátis"
         label.textAlignment = .left
         return label
