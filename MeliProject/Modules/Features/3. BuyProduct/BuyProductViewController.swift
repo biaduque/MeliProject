@@ -53,9 +53,12 @@ class BuyProductViewController: UIViewController, WKUIDelegate {
 extension BuyProductViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         self.webView.hideLoading()
+        FirebaseManager.shared.openScreen(name: "meli-app-triz/web-view/carregamento-concluido")
     }
 
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         self.webView.hideLoading()
+        FirebaseManager.shared.errorReport(error: MeliAPIError.decodingError(error), "falha-ao-abrir-webview")
+
     }
 }

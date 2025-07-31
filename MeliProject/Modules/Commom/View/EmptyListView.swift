@@ -29,7 +29,7 @@ class EmptyListView: UIView {
     
     lazy var message: UILabel = {
         let label = DSLabel.titleStyle
-        label.textColor = UIColor.title
+        label.textColor = UIColor.softBlue
         label.numberOfLines = 5
         label.textAlignment = .center
         return label
@@ -79,7 +79,7 @@ extension EmptyListView: BaseViewProtocol {
         
         message.snp.makeConstraints { make in
             make.height.equalTo(80)
-            make.leading.trailing.equalToSuperview().inset(20)
+            make.leading.trailing.equalToSuperview().inset(80)
             make.centerX.equalToSuperview()
         }
     }

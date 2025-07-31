@@ -24,11 +24,18 @@ class LoadingView: UIView {
         return loading
     }()
     
+    lazy var image: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "loading")
+        image.contentMode = .scaleAspectFit
+        return image
+    }()
+    
     lazy var message: UILabel = {
         let label = DSLabel.bodyStyle
         label.textColor = UIColor.caption
         label.textAlignment = .center
-        label.text = "Loading content..."
+        label.text = "Carregando conteúdo..."
         return label
     }()
     
@@ -42,6 +49,7 @@ class LoadingView: UIView {
     }
     
     public func start() {
+        image.isHidden = false
         message.isHidden = false
         spinner.startAnimating()
     }
@@ -49,6 +57,7 @@ class LoadingView: UIView {
     public func stop() {
         spinner.stopAnimating()
         message.isHidden = true
+        image.isHidden = true
     }
 }
 
@@ -60,6 +69,7 @@ extension LoadingView: BaseViewProtocol {
     
     func setupHierarchy() {
         addSubview(stackView)
+        stackView.addArrangedSubview(image)
         stackView.addArrangedSubview(spinner)
         stackView.addArrangedSubview(message)
     }
@@ -71,6 +81,11 @@ extension LoadingView: BaseViewProtocol {
         
         spinner.snp.makeConstraints { make in
             make.height.width.equalTo(50)
+        }
+        
+        image.snp.makeConstraints { make in
+            make.height.equalTo(100)
+            make.width.equalTo(80)
         }
 
         message.snp.makeConstraints { make in

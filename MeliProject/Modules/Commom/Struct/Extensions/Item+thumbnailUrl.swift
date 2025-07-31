@@ -10,7 +10,7 @@ import UIKit
 extension Item {
     /// Constrói a URL da imagem de miniatura (thumbnail) de um item.
     /// Retorna nil se o thumbnailID não estiver disponível ou for inválido.
-    /// Padrão do Meli  para thumbnails: D_PREFIX-IMAGE_ID-T.jpg (T para thumbnail)
+    /// Padrão do Meli  para thumbnails: D_NQ_NP_2X_PREFIX-IMAGE_ID-T.jpg (T para thumbnail)
     func thumbnailUrl() -> String {
         guard let thumbnailId = self.thumbnailID else {
             return ""

@@ -5,8 +5,8 @@
         "condition": "new",
         "thumbnail_id": "736168-MLA47781742030_102021",
         "catalog_product_id": "MLB20625902",
-        "listing_type_id": "GOLD_PRO",
-        "permalink": "https://www.mercadolivre.com.br/iphone-13-dual-sim-256-gb-estelar-novo-com-caixa-aberta/p/MLB2016198734#polycard_client=search-nordic&searchVariation=MLB2016198734&wid=MLB5507112276&position=4&search_layout=stack&type=product&tracking_id=0a3dc8d2-04ee-4f90-89fe-aebf915c94d3&sid=search",
+        "listing_type_id": "GOLD_NQ_NP_2X_PRO",
+        "permalink": "https://www.mercadolivre.com.br/iphone-13-dual-sim-256-gb-estelar-novo-com-caixa-aberta/p/MLB2016198734#polycarD_NQ_NP_2X_client=search-nordic&searchVariation=MLB2016198734&wid=MLB5507112276&position=4&search_layout=stack&type=product&tracking_id=0a3dc8d2-04ee-4f90-89fe-aebf915c94d3&sid=search",
         "buying_mode": "buy_it_now",
         "site_id": "MLB",
         "category_id": "MLB1055",
@@ -21,8 +21,8 @@
         "official_store_id": 123,
         "tags": [
             "best_seller",
-            "good_quality_picture",
-            "good_seller"
+            "gooD_NQ_NP_2X_quality_picture",
+            "gooD_NQ_NP_2X_seller"
         ],
         "installments": {
             "quantity": 10,
@@ -138,15 +138,15 @@
             {
                 "id": "736168-MLA47781742030_102021",
                 "url": "https://http2.mlstatic.com/D_NQ_NP_2X_736168-MLA47781742030_102021-T.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_876543-MLA51571477742_092022-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_876543-MLA51571477742_092022-O.jpg",
                 "size": "500x500",
                 "max_size": "1200x1200",
                 "quality": "80"
             },
             {
                 "id": "736168-MLA47781742030_102021",
-                "url": "https://http2.mlstatic.com/D_987654-MLA51571477742_092022-O.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_987654-MLA51571477742_092022-O.jpg",
+                "url": "https://http2.mlstatic.com/D_NQ_NP_2X_987654-MLA51571477742_092022-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_987654-MLA51571477742_092022-O.jpg",
                 "size": "500x500",
                 "max_size": "1200x1200",
                 "quality": "80"
@@ -196,8 +196,8 @@
         "condition": "new",
         "thumbnail_id": "626715-MLU69495173557_052023",
         "catalog_product_id": "MLB20626001",
-        "listing_type_id": "GOLD_PREMIUM",
-        "permalink": "https://www.mercadolivre.com.br/apple-iphone-14-pro-128-gb-dourado-excelente-recondicionado/p/MLB2000138020#polycard_client=search-nordic&searchVariation=MLB2000138020&wid=MLB4094028187&position=19&search_layout=stack&type=product&tracking_id=35fd4768-9ad6-4efc-98a7-79b81e92967b&sid=search",
+        "listing_type_id": "GOLD_NQ_NP_2X_PREMIUM",
+        "permalink": "https://www.mercadolivre.com.br/apple-iphone-14-pro-128-gb-dourado-excelente-recondicionado/p/MLB2000138020#polycarD_NQ_NP_2X_client=search-nordic&searchVariation=MLB2000138020&wid=MLB4094028187&position=19&search_layout=stack&type=product&tracking_id=35fd4768-9ad6-4efc-98a7-79b81e92967b&sid=search",
         "buying_mode": "buy_it_now",
         "site_id": "MLB",
         "category_id": "MLB1055",
@@ -211,7 +211,7 @@
         "sold_quantity": 800,
         "official_store_id": 456,
         "tags": [
-            "good_quality_picture",
+            "gooD_NQ_NP_2X_quality_picture",
             "official_store"
         ],
         "installments": {
@@ -327,15 +327,15 @@
             {
                 "id": "626715-MLU69495173557_052023",
                 "url": "https://http2.mlstatic.com/D_NQ_NP_2X_626715-MLU69495173557_052023-T.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_123456-MLA789012345_012023-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_123456-MLA789012345_012023-O.jpg",
                 "size": "600x600",
                 "max_size": "1500x1500",
                 "quality": "85"
             },
             {
                 "id": "626715-MLU69495173557_052023",
-                "url": "https://http2.mlstatic.com/D_789012-MLA789012345_012023-O.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_789012-MLA789012345_012023-O.jpg",
+                "url": "https://http2.mlstatic.com/D_NQ_NP_2X_789012-MLA789012345_012023-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_789012-MLA789012345_012023-O.jpg",
                 "size": "600x600",
                 "max_size": "1500x1500",
                 "quality": "85"
@@ -383,9 +383,9 @@
         "id": "MLB180000001",
         "title": "Fone de Ouvido Bluetooth 5.3 com Cancelamento de Ruído",
         "condition": "new",
-        "thumbnail_id": "960573-MLA72085750275_102023",
+        "thumbnail_id": "987881-MLA82427055203_022025",
         "catalog_product_id": null,
-        "listing_type_id": "GOLD_PRO",
+        "listing_type_id": "GOLD_NQ_NP_2X_PRO",
         "permalink": "https://produto.mercadolivre.com.br/MLB-180000001-fone-de-ouvido-bluetooth-53-com-cancelamento-de-ruido-_JM",
         "buying_mode": "buy_it_now",
         "site_id": "MLB",
@@ -402,7 +402,7 @@
         "tags": [
             "best_seller",
             "free_shipping",
-            "good_seller"
+            "gooD_NQ_NP_2X_seller"
         ],
         "installments": {
             "quantity": 3,
@@ -516,17 +516,17 @@
         },
         "pictures": [
             {
-                "id": "960573-MLA72085750275_102023",
-                "url": "https://http2.mlstatic.com/D_960573-MLA72085750275_102023-O.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_960573-MLA72085750275_102023-O.jpg",
+                "id": "987881-MLA82427055203_022025",
+                "url": "https://http2.mlstatic.com/D_NQ_NP_2X_987881-MLA82427055203_022025-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_987881-MLA82427055203_022025-O.jpg",
                 "size": "800x800",
                 "max_size": "1200x1200",
                 "quality": "90"
             },
             {
                 "id": "960574-MLA72085750276_102023",
-                "url": "https://http2.mlstatic.com/D_960574-MLA72085750276_102023-O.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_960574-MLA72085750276_102023-O.jpg",
+                "url": "https://http2.mlstatic.com/D_NQ_NP_2X_960574-MLA72085750276_102023-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_960574-MLA72085750276_102023-O.jpg",
                 "size": "800x800",
                 "max_size": "1200x1200",
                 "quality": "90"
@@ -555,7 +555,7 @@
                 "available_quantity": 500,
                 "sold_quantity": 2000,
                 "picture_ids": [
-                    "960573-MLA72085750275_102023"
+                    "987881-MLA82427055203_022025"
                 ]
             }
         ]
@@ -564,10 +564,10 @@
         "id": "MLB180000003",
         "title": "Kit de Limpeza 5 em 1 para Computador e Notebook",
         "condition": "new",
-        "thumbnail_id": "963473-MLA72085750275_102023",
+        "thumbnail_id": "856456-MLB86743245320_072025",
         "catalog_product_id": null,
-        "listing_type_id": "GOLD_STANDARD",
-        "permalink": "https://produto.mercadolivre.com.br/MLB-180000003-kit-de-limpeza-5-em-1-para-computador-e-notebook-_JM",
+        "listing_type_id": "GOLD_NQ_NP_2X_STANDARD",
+        "permalink": "https://produto.mercadolivre.com.br/MLB-5469226160-escova-macia-teclado-limpa-pc-5-em-1-limpador-fone-de-ouvido-_JM#polycard_client=search-nordic&backend_model=search-backend&position=29&search_layout=grid&type=item&tracking_id=bc38359a-0729-46d6-bd22-a76205aa1cb7&wid=MLB5469226160&sid=search",
         "buying_mode": "buy_it_now",
         "site_id": "MLB",
         "category_id": "MLB182181",
@@ -644,9 +644,9 @@
         },
         "pictures": [
             {
-                "id": "963473-MLA72085750275_102023",
-                "url": "https://http2.mlstatic.com/D_963473-MLA72085750275_102023-O.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_963473-MLA72085750275_102023-O.jpg",
+                "id": "856456-MLB86743245320_072025",
+                "url": "https://http2.mlstatic.com/D_NQ_NP_2X_856456-MLB86743245320_072025-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_856456-MLB86743245320_072025-O.jpg",
                 "size": "600x600",
                 "max_size": "900x900",
                 "quality": "85"
@@ -662,10 +662,10 @@
         "id": "MLB180000004",
         "title": "Lâmpada LED Inteligente Wi-Fi RGB Compatível com Alexa/Google Home",
         "condition": "new",
-        "thumbnail_id": "966755-MLA72085750275_102023",
+        "thumbnail_id": "715010-MLU72758433870_112023",
         "catalog_product_id": null,
-        "listing_type_id": "GOLD_PREMIUM",
-        "permalink": "https://produto.mercadolivre.com.br/MLB-180000004-lampada-led-inteligente-wi-fi-rgb-compativel-com-alexagoogle-home-_JM",
+        "listing_type_id": "GOLD_NQ_NP_2X_PREMIUM",
+        "permalink": "https://www.mercadolivre.com.br/lmpada-led-10w-rgb-inteligente-wifi-smart-color-elgin/p/MLB21619136#polycard_client=search-nordic&searchVariation=MLB21619136&wid=MLB3178099433&position=4&search_layout=grid&type=product&tracking_id=ecb6a6b0-df28-4ffe-af6f-eddcc649cbad&sid=search",
         "buying_mode": "buy_it_now",
         "site_id": "MLB",
         "category_id": "MLB1000",
@@ -767,9 +767,9 @@
         },
         "pictures": [
             {
-                "id": "966755-MLA72085750275_102023",
-                "url": "https://http2.mlstatic.com/D_966755-MLA72085750275_102023-O.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_966755-MLA72085750275_102023-O.jpg",
+                "id": "715010-MLU72758433870_112023",
+                "url": "https://http2.mlstatic.com/D_NQ_NP_2X_715010-MLU72758433870_112023-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_715010-MLU72758433870_112023-O.jpg",
                 "size": "700x700",
                 "max_size": "1000x1000",
                 "quality": "88"
@@ -785,10 +785,10 @@
         "id": "MLB180000005",
         "title": "Kit de Maquiagem Completo Profissional 12 Peças",
         "condition": "new",
-        "thumbnail_id": "970034-MLA72085750275_102023",
+        "thumbnail_id": "770052-MLB84435357981_052025",
         "catalog_product_id": null,
-        "listing_type_id": "GOLD_STANDARD",
-        "permalink": "https://produto.mercadolivre.com.br/MLB-180000005-kit-de-maquiagem-completo-profissional-12-pecas-_JM",
+        "listing_type_id": "GOLD_NQ_NP_2X_STANDARD",
+        "permalink": "https://produto.mercadolivre.com.br/MLB-5379552496-kit-10-pinceis-profissional-maquiagem-e-nano-mister-facial-_JM#is_advertising=true&backend_model=search-backend&position=2&search_layout=grid&type=pad&tracking_id=4de6632d-3809-4461-8025-5ce16441b610&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=2&ad_click_id=MzFkNTEwMzItNzJhZC00NjE0LWJlNGMtMzUxZmFhYzgzM2I3",
         "buying_mode": "buy_it_now",
         "site_id": "MLB",
         "category_id": "MLB1246",
@@ -871,9 +871,9 @@
         },
         "pictures": [
             {
-                "id": "970034-MLA72085750275_102023",
-                "url": "https://http2.mlstatic.com/D_970034-MLA72085750275_102023-O.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_970034-MLA72085750275_102023-O.jpg",
+                "id": "770052-MLB84435357981_052025",
+                "url": "https://http2.mlstatic.com/D_NQ_NP_2X_770052-MLB84435357981_052025-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_770052-MLB84435357981_052025-O.jpg",
                 "size": "650x650",
                 "max_size": "950x950",
                 "quality": "87"
@@ -889,10 +889,10 @@
         "id": "MLB180000006",
         "title": "Panela de Pressão Elétrica 6L Digital Antiaderente",
         "condition": "new",
-        "thumbnail_id": "973401-MLA72085750275_102023",
+        "thumbnail_id": "896123-MLU77975631687_072024",
         "catalog_product_id": null,
-        "listing_type_id": "GOLD_PREMIUM",
-        "permalink": "https://produto.mercadolivre.com.br/MLB-180000006-panela-de-pressao-eletrica-6l-digital-antiaderente-_JM",
+        "listing_type_id": "GOLD_NQ_NP_2X_PREMIUM",
+        "permalink": "https://www.mercadolivre.com.br/panela-de-presso-eletrica-digital-gallant-6l-gpp06-15-funcoes-clique-e-pronto-inox-1000w/p/MLB38657746?pdp_filters=item_id:MLB3797892373#wid=MLB3797892373&sid=search&is_advertising=true&searchVariation=MLB38657746&backend_model=search-backend&position=1&search_layout=stack&type=pad&tracking_id=9e89fb2b-586c-4d72-b7fc-96cd9ad6a8d4&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=1&ad_click_id=NTFmOTJhZmEtMDk5MS00ZWJhLWFlYWItYmFkMDY0MTljMTU1",
         "buying_mode": "buy_it_now",
         "site_id": "MLB",
         "category_id": "MLB1278",
@@ -1000,9 +1000,9 @@
         },
         "pictures": [
             {
-                "id": "973401-MLA72085750275_102023",
-                "url": "https://http2.mlstatic.com/D_973401-MLA72085750275_102023-O.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_973401-MLA72085750275_102023-O.jpg",
+                "id": "896123-MLU77975631687_072024",
+                "url": "https://http2.mlstatic.com/D_NQ_NP_2X_896123-MLU77975631687_072024-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_896123-MLU77975631687_072024-O.jpg",
                 "size": "750x750",
                 "max_size": "1100x1100",
                 "quality": "92"
@@ -1018,10 +1018,10 @@
         "id": "MLB180000007",
         "title": "Cadeira de Escritório Ergonômica Presidente com Apoio Lombar",
         "condition": "new",
-        "thumbnail_id": "976789-MLA72085750275_102023",
+        "thumbnail_id": "859390-MLU75308655732_032024",
         "catalog_product_id": null,
-        "listing_type_id": "GOLD_PREMIUM",
-        "permalink": "https://produto.mercadolivre.com.br/MLB-180000007-cadeira-de-escritorio-ergonomica-presidente-com-apoio-lombar-_JM",
+        "listing_type_id": "GOLD_NQ_NP_2X_PREMIUM",
+        "permalink": "https://www.mercadolivre.com.br/cadeira-escritorio-ergonmica-mesh-ajuste-lombar-gogo-go200-cor-preto/p/MLB23764741?pdp_filters=item_id:MLB3381952543#wid=MLB3381952543&sid=search&is_advertising=true&searchVariation=MLB23764741&backend_model=search-backend&position=1&search_layout=grid&type=pad&tracking_id=44d0b077-8bac-4eb2-b1cc-f7f8c7c11a45&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=1&ad_click_id=ODdjYjkxMTQtMjYyZi00MWRhLWIxZGMtN2I1YzZhZjFjMzEw",
         "buying_mode": "buy_it_now",
         "site_id": "MLB",
         "category_id": "MLB1000",
@@ -1139,9 +1139,9 @@
         },
         "pictures": [
             {
-                "id": "976789-MLA72085750275_102023",
-                "url": "https://http2.mlstatic.com/D_976789-MLA72085750275_102023-O.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_976789-MLA72085750275_102023-O.jpg",
+                "id": "859390-MLU75308655732_032024",
+                "url": "https://http2.mlstatic.com/D_NQ_NP_2X_859390-MLU75308655732_032024-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_859390-MLU75308655732_032024-O.jpg",
                 "size": "850x850",
                 "max_size": "1300x1300",
                 "quality": "91"
@@ -1157,14 +1157,14 @@
         "id": "MLB180000008",
         "title": "Jogo de Lençol Casal 4 Peças 180 Fios Microfibra",
         "condition": "new",
-        "thumbnail_id": "980045-MLA72085750275_102023",
+        "thumbnail_id": "946302-MLB77218837919_062024",
         "catalog_product_id": null,
-        "listing_type_id": "GOLD_STANDARD",
-        "permalink": "https://produto.mercadolivre.com.br/MLB-180000008-jogo-de-lencol-casal-4-pecas-180-fios-microfibra-_JM",
+        "listing_type_id": "GOLD_NQ_NP_2X_STANDARD",
+        "permalink": "https://produto.mercadolivre.com.br/MLB-3754538703-jogo-de-lencol-e-fronha-queen-kit-4-pecas-180-fios-algodo-_JM?searchVariation=183302749741#polycard_client=search-nordic&searchVariation=183302749741&position=38&search_layout=grid&type=item&tracking_id=4b1db81a-600f-463d-aed1-d30d613ba207",
         "buying_mode": "buy_it_now",
         "site_id": "MLB",
         "category_id": "MLB1205",
-        "domain_id": "MLB-BED_SHEETS",
+        "domain_id": "MLB-BED_NQ_NP_2X_SHEETS",
         "warranty": "Sem garantia",
         "currency_id": "BRL",
         "price": 79.9,
@@ -1216,7 +1216,7 @@
                 "attribute_group_name": "Principais"
             },
             {
-                "id": "THREAD_COUNT",
+                "id": "THREAD_NQ_NP_2X_COUNT",
                 "name": "Quantidade de Fios",
                 "value_id": null,
                 "value_name": "180 Fios",
@@ -1275,9 +1275,9 @@
         },
         "pictures": [
             {
-                "id": "980045-MLA72085750275_102023",
-                "url": "https://http2.mlstatic.com/D_980045-MLA72085750275_102023-O.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_980045-MLA72085750275_102023-O.jpg",
+                "id": "946302-MLB77218837919_062024",
+                "url": "https://http2.mlstatic.com/D_NQ_NP_2X_946302-MLB77218837919_062024-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_946302-MLB77218837919_062024-O.jpg",
                 "size": "700x700",
                 "max_size": "1000x1000",
                 "quality": "89"
@@ -1293,10 +1293,10 @@
         "id": "MLB180000009",
         "title": "Caixa de Som Bluetooth Portátil com LED RGB e Grave Potente",
         "condition": "new",
-        "thumbnail_id": "983312-MLA72085750275_102023",
+        "thumbnail_id": "819909-MLA79987656808_102024",
         "catalog_product_id": null,
-        "listing_type_id": "GOLD_PRO",
-        "permalink": "https://produto.mercadolivre.com.br/MLB-180000009-caixa-de-som-bluetooth-portatil-com-led-rgb-e-grave-potente-_JM",
+        "listing_type_id": "GOLD_NQ_NP_2X_PRO",
+        "permalink": "https://www.mercadolivre.com.br/caixa-de-som-bluetooth-portatil-grave-potente-com-rgb-cor-preto/p/MLB41736629#polycard_client=search-nordic&searchVariation=MLB41736629&wid=MLB4066604827&position=18&search_layout=grid&type=product&tracking_id=62d7957f-7485-453f-80a6-a31ca097b295&sid=search",
         "buying_mode": "buy_it_now",
         "site_id": "MLB",
         "category_id": "MLB3522",
@@ -1420,9 +1420,9 @@
         },
         "pictures": [
             {
-                "id": "983312-MLA72085750275_102023",
-                "url": "https://http2.mlstatic.com/D_983312-MLA72085750275_102023-O.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_983312-MLA72085750275_102023-O.jpg",
+                "id": "819909-MLA79987656808_102024",
+                "url": "https://http2.mlstatic.com/D_NQ_NP_2X_819909-MLA79987656808_102024-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_819909-MLA79987656808_102024-O.jpg",
                 "size": "800x800",
                 "max_size": "1200x1200",
                 "quality": "90"
@@ -1438,10 +1438,10 @@
         "id": "MLB180000010",
         "title": "Máquina de Cortar Cabelo Profissional Recarregável Sem Fio",
         "condition": "new",
-        "thumbnail_id": "986623-MLA72085750275_102023",
+        "thumbnail_id": "856216-MLA88605290506_072025",
         "catalog_product_id": null,
-        "listing_type_id": "GOLD_STANDARD",
-        "permalink": "https://produto.mercadolivre.com.br/MLB-180000010-maquina-de-cortar-cabelo-profissional-recarregavel-sem-fio-_JM",
+        "listing_type_id": "GOLD_NQ_NP_2X_STANDARD",
+        "permalink": "https://www.mercadolivre.com.br/maquina-de-acabamento-acabamento-profissional-kemei-km-1949-cor-prata/p/MLB46881828#polycard_client=search-nordic&searchVariation=MLB46881828&wid=MLB4118662967&position=40&search_layout=grid&type=product&tracking_id=0d08ead6-e4e1-4873-8e40-c65ef1401766&sid=search",
         "buying_mode": "buy_it_now",
         "site_id": "MLB",
         "category_id": "MLB1480",
@@ -1535,9 +1535,9 @@
         },
         "pictures": [
             {
-                "id": "986623-MLA72085750275_102023",
-                "url": "https://http2.mlstatic.com/D_986623-MLA72085888888_102023-O.jpg",
-                "secure_url": "https://http2.mlstatic.com/D_986623-MLA72085888888_102023-O.jpg",
+                "id": "856216-MLA88605290506_072025",
+                "url": "https://http2.mlstatic.com/D_NQ_NP_2X_856216-MLA88605290506_072025-O.jpg",
+                "secure_url": "https://http2.mlstatic.com/D_NQ_NP_2X_986623-MLA72085888888_102023-O.jpg",
                 "size": "700x700",
                 "max_size": "1000x1000",
                 "quality": "89"
