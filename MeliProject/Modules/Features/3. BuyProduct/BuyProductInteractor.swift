@@ -14,6 +14,7 @@ protocol BuyProductBusinessLogic: AnyObject {
 class BuyProductInteractor: BuyProductBusinessLogic {
     func getWebView(_ completion: @escaping ((URLRequest?) -> Void), url: String) {
         guard let myURL = URL(string: url) else {
+            FirebaseManager.shared.errorReport(error: MeliAPIError.invalidURL)
             return completion(nil)
         }
         let myRequest = URLRequest(url: myURL)

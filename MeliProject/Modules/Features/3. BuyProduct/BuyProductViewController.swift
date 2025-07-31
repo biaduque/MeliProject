@@ -34,6 +34,8 @@ class BuyProductViewController: UIViewController, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadWebView()
+        
+        FirebaseManager.shared.openScreen(name: "meli-app-triz/web-view/buy-product")
     }
     
     func setup(interactor: BuyProductBusinessLogic) {

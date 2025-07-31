@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import Kingfisher
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UIViewController()
         window?.makeKeyAndVisible()
         
+        FirebaseApp.configure()
         return true
     }
     

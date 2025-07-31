@@ -31,6 +31,7 @@ class HomeViewController: UIViewController {
     // MARK: LifeCycle
     override func loadView() {
         view = styleView
+        FirebaseManager.shared.openScreen(name: "meli-app-triz/search-home")
     }
     
     override func viewDidLoad() {
@@ -101,18 +102,19 @@ extension HomeViewController: ContentControllerProtocol {
 // MARK: Extensions
 extension HomeViewController: HomeViewDelegate {
     func didSearch(item: String) {
-        print("buscou:::", item)
+        FirebaseManager.shared.clickButton(name: "buscou:\(item)")
         lastSearched = item
         interactor?.fetchItemList(search: item, page: String(page))
     }
     
     func didSelectItem(id: String) {
-        print("Selecionou item:::", id)
+        FirebaseManager.shared.clickButton(name: "selecionou-item:\(id)")
         router?.goToDetail(from: id)
     }
     
     func didRequestedNextPage() {
         page+=1
+        FirebaseManager.shared.clickButton(name: "solicitou-nova-pagina:\(page)")
         interactor?.fetchItemList(search: lastSearched, page: String(page))
     }
 }

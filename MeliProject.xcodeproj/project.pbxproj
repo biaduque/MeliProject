@@ -13,6 +13,9 @@
 		13255F4B2E380A7000ED0E45 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 13255F4A2E380A7000ED0E45 /* SnapKit */; };
 		132560922E391C2D00ED0E45 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 132560912E391C2D00ED0E45 /* Kingfisher */; };
 		13982E9A2E3B3B66001C3333 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 13982E992E3B3B66001C3333 /* RxTest */; };
+		1398307A2E3BCD50001C3333 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 139830792E3BCD50001C3333 /* FirebaseRemoteConfig */; };
+		1398307E2E3BCEBA001C3333 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1398307D2E3BCEBA001C3333 /* FirebaseCrashlytics */; };
+		139830822E3BD631001C3333 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 139830812E3BD631001C3333 /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +98,10 @@
 			files = (
 				132560922E391C2D00ED0E45 /* Kingfisher in Frameworks */,
 				13255F4B2E380A7000ED0E45 /* SnapKit in Frameworks */,
+				139830822E3BD631001C3333 /* FirebaseAnalytics in Frameworks */,
 				13255F482E380A6300ED0E45 /* RxSwift in Frameworks */,
+				1398307E2E3BCEBA001C3333 /* FirebaseCrashlytics in Frameworks */,
+				1398307A2E3BCD50001C3333 /* FirebaseRemoteConfig in Frameworks */,
 				13255F462E380A6300ED0E45 /* RxCocoa in Frameworks */,
 				1322F41C2E3B237C000C7088 /* RxBlocking in Frameworks */,
 			);
@@ -165,6 +171,9 @@
 				13255F4A2E380A7000ED0E45 /* SnapKit */,
 				132560912E391C2D00ED0E45 /* Kingfisher */,
 				1322F41B2E3B237C000C7088 /* RxBlocking */,
+				139830792E3BCD50001C3333 /* FirebaseRemoteConfig */,
+				1398307D2E3BCEBA001C3333 /* FirebaseCrashlytics */,
+				139830812E3BD631001C3333 /* FirebaseAnalytics */,
 			);
 			productName = MeliProject;
 			productReference = 13EF745F2E37FA210096549E /* MeliProject.app */;
@@ -253,6 +262,7 @@
 				13255F442E380A6300ED0E45 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				13255F492E380A7000ED0E45 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				132560902E391C2D00ED0E45 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				139830782E3BCD50001C3333 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 13EF74602E37FA210096549E /* Products */;
@@ -649,6 +659,14 @@
 				minimumVersion = 8.5.0;
 			};
 		};
+		139830782E3BCD50001C3333 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -681,6 +699,19 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 13255F442E380A6300ED0E45 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxTest;
+		};
+		139830792E3BCD50001C3333 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 139830782E3BCD50001C3333 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		1398307D2E3BCEBA001C3333 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseCrashlytics;
+		};
+		139830812E3BD631001C3333 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
