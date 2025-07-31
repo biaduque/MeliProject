@@ -50,6 +50,8 @@ class HomeInteractor: HomeBusinessLogic {
                     },
                     onError: { [weak self] error in
                         self?.presenter?.presentError()
+                        FirebaseManager.shared.errorReport(error: MeliAPIError.apiError(statusCode: 500, message: error.localizedDescription))
+
                     }
                 )
                 .disposed(by: disposeBag)

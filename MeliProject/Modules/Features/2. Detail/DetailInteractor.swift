@@ -34,7 +34,7 @@ class DetailInteractor: DetailBusinessLogic {
                 },
                 onError: { [weak self] error in
                     guard let self = self else { return }
-                    
+                    FirebaseManager.shared.errorReport(error: MeliAPIError.apiError(statusCode: 500, message: error.localizedDescription))
                     presenter?.presentError()
                 }
             )

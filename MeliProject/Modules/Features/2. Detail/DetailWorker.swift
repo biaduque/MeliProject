@@ -26,11 +26,13 @@ class DetailWorker: DetailWorkingProtocol {
                 
                 if let error = error {
                     observer.onError(error)
+                    FirebaseManager.shared.errorReport(error: MeliAPIError.invalidURL)
                     return
                 }
                 
                 guard let data = data else {
                     observer.onError(NSError(domain: "No data", code: -1, userInfo: nil))
+                    FirebaseManager.shared.errorReport(error: MeliAPIError.invalidResponse)
                     return
                 }
                 
@@ -47,6 +49,7 @@ class DetailWorker: DetailWorkingProtocol {
                     }) ?? detailMock[0])
                     observer.onCompleted()
                     /// Chamar erro caso não consiga buscar os itens
+                    FirebaseManager.shared.errorReport(error: MeliAPIError.apiError(statusCode: 500, message: error.localizedDescription))
                     observer.onError(error)
                 }
             }

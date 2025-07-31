@@ -44,6 +44,7 @@ class DetailViewController: UIViewController {
         setupNavigationButtons()
         
         interactor?.fetchDetail(id: self.detailId)
+        FirebaseManager.shared.openScreen(name: "meli-app-triz/detail-item")
     }
     
     // MARK: Suport functions
@@ -129,12 +130,14 @@ extension DetailViewController {
         if let url = URL(string: itemPermalink) {
             let activityViewController = UIActivityViewController(activityItems: [url], applicationActivities: nil)
             present(activityViewController, animated: true, completion: nil)
+            FirebaseManager.shared.clickButton(name: "selecionou-compartilhar-item:\(self.urlItem)")
         } else {
-            print("Link inválido para compartilhar")
+            FirebaseManager.shared.errorReport(error: MeliAPIError.invalidURL)
         }
     }
     
     @objc func cartButtonTapped() {
+        FirebaseManager.shared.clickButton(name: "selecionou-comprar-item:\(self.urlItem)")
         router?.routeToBuyProduct(url: self.urlItem)
     }
 }

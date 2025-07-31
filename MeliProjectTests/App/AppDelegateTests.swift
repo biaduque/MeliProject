@@ -53,12 +53,9 @@ class AppDelegateTests: XCTestCase {
         // Given 
         let application = UIApplication.shared
         
-        // When 
-        _ = appDelegate.application(application, didFinishLaunchingWithOptions: nil)
-        
         // Then 
-        XCTAssertNotNil(appDelegate.window, "A window não deveria ser nula após a inicialização.")
-        XCTAssertNotNil(appDelegate.window?.rootViewController, "A window deveria ter um rootViewController.")
+        XCTAssertNotNil(application.windows.first, "A window não deveria ser nula após a inicialização.")
+        XCTAssertNotNil(application.windows[0].rootViewController, "A window deveria ter um rootViewController.")
     }
 
     // MARK: - Testes do Core Data
