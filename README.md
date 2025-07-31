@@ -1,4 +1,5 @@
 # Meli Project
+
 ## 📄 Índice
 
 * [Paleta de Colores](#paleta-de-colores)
@@ -90,4 +91,12 @@ Para este proyecto se utilizaron las siguientes bibliotecas:
 * Finalizar cobertura de testes unitários (WIP devido à arquivos de autenticação que estão criados porém ainda não finalizados)
 * Adicionar resultados de busca através da localização do usuário: https://github.com/biaduque/MeliProject/issues/18
 * Adicionar CI/CD no projeto com o uso de github actions: https://github.com/biaduque/MeliProject/issues/19
+
+### Notas do desenvolvedor
+> ⚠️ **Atenção** ⚠️
+> Em alguns momentos, ao clonar um projeto novo, o xcode não importa automaticamente os schemas. Para configurar os schemas corretamente e rodar o projeto:
+> Produc > Schemes > Manage Schemes ...
+<img width="600" height="120" alt="schemes" src="https://github.com/user-attachments/assets/be8ee208-cb17-46b2-84c1-270c9bfa05b2" />
+
+
 
