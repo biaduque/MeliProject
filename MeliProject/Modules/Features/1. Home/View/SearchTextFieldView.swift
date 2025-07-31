@@ -55,7 +55,7 @@ class SearchTextFieldView: UIView, UISearchTextFieldDelegate {
     lazy var message: UILabel = {
         let label = DSLabel.titleStyle
         label.text = "O seu buscador de produtos do Mercado Livre :)"
-        label.textColor = UIColor.title
+        label.textColor = UIColor.softBlue
         label.numberOfLines = 4
         label.textAlignment = .center
         return label
