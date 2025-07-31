@@ -5,7 +5,6 @@
 //  Created by Beatriz Duque on 28/07/25.
 //
 
-// TO-DO: adicionar modelo para detalhe
 protocol HomeRoutingProtocol: AnyObject {
     func goToDetail(from id: String)
 }

@@ -66,10 +66,22 @@ class HomeViewController: UIViewController {
     func setupController() {
         styleView?.setup(delegate: self)
         
-//        if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
-//            sceneDelegate.authCoordinator?.startMercadoLivreAuth()
-//        }
+        ///WIP
+       /// authenticateMeli()
     }
+    
+    // MARK: TO-DO
+    /// WIP
+    ///  Chama autenticação do usuário via login no MELI pelo browser
+    ///  Funcionalidade ainda nao implementada e homologada
+    /**
+     func authenticateMeli() {
+         if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+             sceneDelegate.authCoordinator?.startMercadoLivreAuth()
+         }
+     }
+     */
+   
 }
 
 // MARK: Presenter functions
