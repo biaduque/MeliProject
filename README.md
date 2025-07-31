@@ -55,8 +55,8 @@ Este proyecto fue desarrollado con el objetivo de ofrecer un "buscador" de produ
 | Não Funcional            | Testes unitários                                                          | https://github.com/biaduque/MeliProject/issues/9 | 
 
 
-> ⚠️ **Atenção**  
-> Debido a problemas encontrados en la conexión con la API de Mercado Libre, el proyecto actualmente está utilizando un mock (mediante un archivo .json). Los problemas encontrados están documentados en el archivo: [utilizar-token.pdf](https://github.com/user-attachments/files/21535747/utilizar-token.pdf)
+> ⚠️ **Atenção** ⚠️
+> Debido a problemas encontrados en la conexión con la API de Mercado Libre, el proyecto actualmente está utilizando un mock (mediante un archivo .json). Los problemas encontrados están documentados en el archivo: [utilizar-token.pdf](https://github.com/user-attachments/files/21537136/utilizar-token.pdf)
 
 # Arquitectura do proyeto
 > Arquitetura do projeto
