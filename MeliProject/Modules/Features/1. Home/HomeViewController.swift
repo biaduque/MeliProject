@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import CoreLocation
 
 class HomeViewController: UIViewController {
     var styleView: HomeView?
@@ -14,6 +15,7 @@ class HomeViewController: UIViewController {
     var interactor: HomeBusinessLogic?
     var authManager: AuthManager?
     
+    let locationManager = CLLocationManager()
     private var page: Int = 1
     private var lastSearched: String = ""
     
@@ -38,6 +40,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         setupController()
+        requestLocation()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -81,7 +84,13 @@ class HomeViewController: UIViewController {
          }
      }
      */
-   
+    
+    func requestLocation() {
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+    }
 }
 
 // MARK: Presenter functions
@@ -128,5 +137,22 @@ extension HomeViewController: HomeViewDelegate {
         page+=1
         FirebaseManager.shared.clickButton(name: "solicitou-nova-pagina:\(page)")
         interactor?.fetchItemList(search: lastSearched, page: String(page))
+    }
+}
+
+
+extension HomeViewController: CLLocationManagerDelegate {
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        if manager.authorizationStatus == .authorizedWhenInUse || manager.authorizationStatus == .authorizedAlways {
+            locationManager.requestLocation()
+            FirebaseManager.shared.clickButton(name: "clicou-permintir-localizacao")
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        FirebaseManager.shared.errorReport(error: error, "falha-localizacao")
     }
 }
