@@ -1,0 +1,7 @@
+{
+"access_token": "abc123mocktoken",
+"token_type": "Bearer APP_SIFAJSIDASODKASOPDKA",
+"expires_in": 3600,
+"scope": "read write",
+"refresh_token": "refresh123"
+}
