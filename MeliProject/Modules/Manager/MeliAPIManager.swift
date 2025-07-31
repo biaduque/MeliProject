@@ -8,7 +8,13 @@
 import UIKit
 import Foundation
 
-public class MeliAPIManager {
+// MARK: - Protocolo MeliAPIManager
+protocol MeliAPIManagerProtocol {
+    func requestAccessToken(code: String, clientID: String, clientSecret: String, redirectURI: String) async throws -> TokenResponse
+    func updateAccessToken(_ newToken: String)
+}
+
+public class MeliAPIManager: MeliAPIManagerProtocol {
     public static let baseURL = "https://api.mercadolibre.com"
     private var accessToken: String? // Renovar
 

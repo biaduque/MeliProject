@@ -1,0 +1,1528 @@
+{
+  "site_id": "MLB",
+  "query": "mais vendidos",
+  "paging": {
+    "total": 5000,
+    "primary_results": 100,
+    "offset": 0,
+    "limit": 10
+  },
+  "results": [
+    {
+      "id": "MLB1234567890",
+      "title": "Apple iPhone 13 (128 GB) – Estelar",
+      "condition": "new",
+      "thumbnail_id": "736168-MLA47781742030_102021",
+      "catalog_product_id": "MLB20625902",
+      "listing_type_id": "GOLD_PRO",
+      "permalink": "https://www.mercadolivre.com.br/iphone-13-dual-sim-256-gb-estelar-novo-com-caixa-aberta/p/MLB2016198734#polycard_client=search-nordic&searchVariation=MLB2016198734&wid=MLB5507112276&position=4&search_layout=stack&type=product&tracking_id=0a3dc8d2-04ee-4f90-89fe-aebf915c94d3&sid=search",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB1055",
+      "domain_id": "MLB-CELLPHONES",
+      "warranty": "Garantia de fábrica: 1 ano",
+      "currency_id": "BRL",
+      "price": 3899.00,
+      "original_price": 4299.00,
+      "sale_price": null,
+      "available_quantity": 500,
+      "sold_quantity": 1200,
+      "official_store_id": 123,
+      "tags": ["best_seller", "good_quality_picture", "good_seller"],
+      "installments": {
+        "quantity": 10,
+        "amount": 389.90,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": ["self_service_in", "mandatory_free_shipping"],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "stop_time": "2025-12-31T23:59:59.000Z",
+      "seller": {
+        "id": 123456789,
+        "permalink": "http://perfil.mercadolivre.com.br/TEST.SELLER",
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "8724",
+          "value_name": "Apple",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "8724",
+              "name": "Apple",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "iPhone 13",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "iPhone 13",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        },
+        {
+          "id": "CAPACITY",
+          "name": "Capacidade de armazenamento",
+          "value_id": "20000000",
+          "value_name": "128 GB",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "20000000",
+              "name": "128 GB",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        },
+        {
+          "id": "RAM",
+          "name": "Memória RAM",
+          "value_id": null,
+          "value_name": "4 GB",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "4 GB",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        },
+        {
+          "id": "COLOR",
+          "name": "Cor principal",
+          "value_id": "777777",
+          "value_name": "Estelar",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "777777",
+              "name": "Estelar",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        }
+      ],
+      "differential_pricing": {
+        "id": 12345678
+      },
+      "pictures": [
+        {
+          "id": "736168-MLA47781742030_102021",
+          "url": "https://http2.mlstatic.com/D_NQ_NP_2X_736168-MLA47781742030_102021-T.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_876543-MLA51571477742_092022-O.jpg",
+          "size": "500x500",
+          "max_size": "1200x1200",
+          "quality": "80"
+        },
+        {
+          "id": "736168-MLA47781742030_102021",
+          "url": "https://http2.mlstatic.com/D_987654-MLA51571477742_092022-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_987654-MLA51571477742_092022-O.jpg",
+          "size": "500x500",
+          "max_size": "1200x1200",
+          "quality": "80"
+        }
+      ],
+      "accepts_mercadopago": true,
+      "status": "active",
+      "description": "O iPhone 13 oferece um sistema de câmera dupla avançado, tela Super Retina XDR mais brilhante e o chip A15 Bionic para um desempenho ultrarrápido. Bateria com grande duração e resistência à água e poeira. Câmeras de 12MP com Modo Cinema, Estilos Fotográficos e gravação de vídeo 4K HDR. Ideal para quem busca alta performance e qualidade em um smartphone. Aparelho novo, lacrado e com garantia do fabricante. Conteúdo da embalagem: iPhone, Cabo de USB-C para Lightning e Documentação.",
+      "listing_source": "MLB",
+      "variations": [
+        {
+          "id": 1001,
+          "price": 3899.00,
+          "attribute_combinations": [
+            {
+              "id": "COLOR",
+              "name": "Cor",
+              "value_id": "777777",
+              "value_name": "Estelar",
+              "value_struct": null,
+              "values": null,
+              "attribute_group_id": null,
+              "attribute_group_name": null
+            },
+            {
+              "id": "STORAGE_CAPACITY",
+              "name": "Capacidade",
+              "value_id": "20000000",
+              "value_name": "128 GB",
+              "value_struct": null,
+              "values": null,
+              "attribute_group_id": null,
+              "attribute_group_name": null
+            }
+          ],
+          "available_quantity": 300,
+          "sold_quantity": 700,
+          "picture_ids": ["876543-MLA51571477742_092022"]
+        }
+      ]
+    },
+    {
+      "id": "MLB0987654321",
+      "title": "Apple iPhone 14 Pro (256 GB) – Gold Premium",
+      "condition": "new",
+      "thumbnail_id": "626715-MLU69495173557_052023",
+      "catalog_product_id": "MLB20626001",
+      "listing_type_id": "GOLD_PREMIUM",
+      "permalink": "https://www.mercadolivre.com.br/apple-iphone-14-pro-128-gb-dourado-excelente-recondicionado/p/MLB2000138020#polycard_client=search-nordic&searchVariation=MLB2000138020&wid=MLB4094028187&position=19&search_layout=stack&type=product&tracking_id=35fd4768-9ad6-4efc-98a7-79b81e92967b&sid=search",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB1055",
+      "domain_id": "MLB-CELLPHONES",
+      "warranty": "Garantia de fábrica: 1 ano",
+      "currency_id": "BRL",
+      "price": 6199.00,
+      "original_price": 6599.00,
+      "sale_price": null,
+      "available_quantity": 200,
+      "sold_quantity": 800,
+      "official_store_id": 456,
+      "tags": ["good_quality_picture", "official_store"],
+      "installments": {
+        "quantity": 12,
+        "amount": 516.58,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": ["self_service_in"],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "stop_time": "2025-11-15T23:59:59.000Z",
+      "seller": {
+        "id": 987654321,
+        "permalink": "http://perfil.mercadolivre.com.br/OUTRO.SELLER",
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "8724",
+          "value_name": "Apple",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "8724",
+              "name": "Apple",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "iPhone 14 Pro",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "iPhone 14 Pro",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        },
+        {
+          "id": "CAPACITY",
+          "name": "Capacidade de armazenamento",
+          "value_id": "20000001",
+          "value_name": "256 GB",
+          "value_struct": null,
+          "values": [
+            {
+              "id": "20000001",
+              "name": "256 GB",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        },
+        {
+          "id": "RAM",
+          "name": "Memória RAM",
+          "value_id": null,
+          "value_name": "6 GB",
+          "value_struct": null,
+          "values": [
+          {
+            "id": null,
+            "name": "6 GB",
+            "struct": null
+          }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        },
+        {
+          "id": "COLOR",
+          "name": "Cor principal",
+          "value_id": "888888",
+          "value_name": "Roxo-profundo",
+          "value_struct": null,
+          "values": [
+          {
+            "id": "888888",
+            "name": "Roxo-profundo",
+            "struct": null
+          }
+          ],
+          "attribute_group_id": "OTHERS",
+          "attribute_group_name": "Outros"
+        }
+      ],
+      "differential_pricing": {
+        "id": 98765432
+      },
+      "pictures": [
+        {
+          "id": "626715-MLU69495173557_052023",
+          "url": "https://http2.mlstatic.com/D_NQ_NP_2X_626715-MLU69495173557_052023-T.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_123456-MLA789012345_012023-O.jpg",
+          "size": "600x600",
+          "max_size": "1500x1500",
+          "quality": "85"
+        },
+        {
+          "id": "626715-MLU69495173557_052023",
+          "url": "https://http2.mlstatic.com/D_789012-MLA789012345_012023-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_789012-MLA789012345_012023-O.jpg",
+          "size": "600x600",
+          "max_size": "1500x1500",
+          "quality": "85"
+        }
+      ],
+      "accepts_mercadopago": true,
+      "status": "active",
+      "description": "Com a Dynamic Island e tela Sempre Ativa, o iPhone 14 Pro eleva a experiência do usuário a um novo patamar. Apresenta uma câmera principal de 48 MP para fotos incrivelmente detalhadas e o poderoso chip A16 Bionic, que proporciona desempenho ultrarrápido. Design elegante e robusto, com Ceramic Shield. Aparelho novo, lacrado e com garantia do fabricante.",
+      "listing_source": "MLB",
+      "variations": [
+        {
+          "id": 2001,
+          "price": 6199.00,
+          "attribute_combinations": [
+            {
+              "id": "COLOR",
+              "name": "Cor",
+              "value_id": "888888",
+              "value_name": "Roxo-profundo",
+              "value_struct": null,
+              "values": null,
+              "attribute_group_id": null,
+              "attribute_group_name": null
+            },
+            {
+              "id": "STORAGE_CAPACITY",
+              "name": "Capacidade",
+              "value_id": "20000001",
+              "value_name": "256 GB",
+              "value_struct": null,
+              "values": null,
+              "attribute_group_id": null,
+              "attribute_group_name": null
+            }
+          ],
+          "available_quantity": 150,
+          "sold_quantity": 300,
+          "picture_ids": ["123456-MLA789012345_012023"]
+        }
+      ]
+    },
+    {
+      "id": "MLB180000001",
+      "title": "Fone de Ouvido Bluetooth 5.3 com Cancelamento de Ruído",
+      "condition": "new",
+      "thumbnail_id": "960573-MLA72085750275_102023",
+      "catalog_product_id": null,
+      "listing_type_id": "GOLD_PRO",
+      "permalink": "https://produto.mercadolivre.com.br/MLB-180000001-fone-de-ouvido-bluetooth-53-com-cancelamento-de-ruido-_JM",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB3522",
+      "domain_id": "MLB-HEADPHONES",
+      "warranty": "3 meses de garantia",
+      "currency_id": "BRL",
+      "price": 129.90,
+      "original_price": 150.00,
+      "sale_price": null,
+      "available_quantity": 1500,
+      "sold_quantity": 10000,
+      "official_store_id": null,
+      "tags": ["best_seller", "free_shipping", "good_seller"],
+      "installments": {
+        "quantity": 3,
+        "amount": 43.30,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": ["self_service_in", "mandatory_free_shipping"],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "stop_time": "2025-12-31T23:59:59.000Z",
+      "seller": {
+        "id": 12345,
+        "permalink": "http://perfil.mercadolivre.com.br/SELLER.AUDIO",
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": null,
+          "value_name": "Xiaomi",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Xiaomi",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "Redmi Buds 4 Lite",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Redmi Buds 4 Lite",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "CONNECTION_TYPE",
+          "name": "Tipo de Conexão",
+          "value_id": null,
+          "value_name": "Bluetooth 5.3",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Bluetooth 5.3",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "CONEXÃO",
+          "attribute_group_name": "Conexão"
+        },
+        {
+          "id": "NOISE_CANCELLATION",
+          "name": "Cancelamento de Ruído",
+          "value_id": null,
+          "value_name": "Ativo",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Ativo",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "ÁUDIO",
+          "attribute_group_name": "Áudio"
+        },
+        {
+          "id": "COLOR",
+          "name": "Cor",
+          "value_id": null,
+          "value_name": "Preto",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Preto",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "GERAL",
+          "attribute_group_name": "Geral"
+        }
+      ],
+      "differential_pricing": {
+        "id": 10101010
+      },
+      "pictures": [
+        {
+          "id": "960573-MLA72085750275_102023",
+          "url": "https://http2.mlstatic.com/D_960573-MLA72085750275_102023-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_960573-MLA72085750275_102023-O.jpg",
+          "size": "800x800",
+          "max_size": "1200x1200",
+          "quality": "90"
+        },
+        {
+          "id": "960574-MLA72085750276_102023",
+          "url": "https://http2.mlstatic.com/D_960574-MLA72085750276_102023-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_960574-MLA72085750276_102023-O.jpg",
+          "size": "800x800",
+          "max_size": "1200x1200",
+          "quality": "90"
+        }
+      ],
+      "accepts_mercadopago": true,
+      "status": "active",
+      "description": "Experimente a liberdade sem fios com o Fone de Ouvido Bluetooth 5.3. Design ergonômico, som de alta fidelidade e bateria de longa duração para suas músicas e chamadas. Compatível com Android e iOS. Ideal para o dia a dia e atividades físicas, oferecendo conforto e qualidade sonora. Leve e portátil.",
+      "listing_source": "MLB",
+      "variations": [
+        {
+          "id": 1001,
+          "price": 129.90,
+          "attribute_combinations": [
+            {
+              "id": "COLOR",
+              "name": "Cor",
+              "value_id": "COLOR_BLACK",
+              "value_name": "Preto",
+              "value_struct": null,
+              "values": null,
+              "attribute_group_id": null,
+              "attribute_group_name": null
+            }
+          ],
+          "available_quantity": 500,
+          "sold_quantity": 2000,
+          "picture_ids": ["960573-MLA72085750275_102023"]
+        }
+      ]
+    },
+    {
+      "id": "MLB180000003",
+      "title": "Kit de Limpeza 5 em 1 para Computador e Notebook",
+      "condition": "new",
+      "thumbnail_id": "963473-MLA72085750275_102023",
+      "catalog_product_id": null,
+      "listing_type_id": "GOLD_STANDARD",
+      "permalink": "https://produto.mercadolivre.com.br/MLB-180000003-kit-de-limpeza-5-em-1-para-computador-e-notebook-_JM",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB182181",
+      "domain_id": "MLB-COMPUTER_CLEANING_KITS",
+      "warranty": "1 mês de garantia",
+      "currency_id": "BRL",
+      "price": 45.00,
+      "original_price": null,
+      "sale_price": null,
+      "available_quantity": 3000,
+      "sold_quantity": 15000,
+      "official_store_id": null,
+      "tags": ["free_shipping_min_value"],
+      "installments": {
+        "quantity": 1,
+        "amount": 45.00,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "stop_time": "2025-10-31T23:59:59.000Z",
+      "seller": {
+        "id": 11223,
+        "permalink": "http://perfil.mercadolivre.com.br/SELLER.HOME",
+        "power_seller_status": "silver",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": null,
+          "value_name": "Multilaser",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Multilaser",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "KIT_CONTENTS",
+          "name": "Conteúdo do Kit",
+          "value_id": null,
+          "value_name": "Escova, Spray, Pano, Soprador, Caneta",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Escova, Spray, Pano, Soprador, Caneta",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "COMPOSIÇÃO",
+          "attribute_group_name": "Composição"
+        }
+      ],
+      "differential_pricing": {
+        "id": 10101012
+      },
+      "pictures": [
+        {
+          "id": "963473-MLA72085750275_102023",
+          "url": "https://http2.mlstatic.com/D_963473-MLA72085750275_102023-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_963473-MLA72085750275_102023-O.jpg",
+          "size": "600x600",
+          "max_size": "900x900",
+          "quality": "85"
+        }
+      ],
+      "accepts_mercadopago": true,
+      "status": "active",
+      "description": "Kit completo de limpeza 5 em 1 para manter seu computador e notebook sempre limpos. Inclui escova, spray, pano de microfibra, soprador e caneta para teclado. Essencial para a manutenção de seus eletrônicos.",
+      "listing_source": "MLB",
+      "variations": null
+    },
+    {
+      "id": "MLB180000004",
+      "title": "Lâmpada LED Inteligente Wi-Fi RGB Compatível com Alexa/Google Home",
+      "condition": "new",
+      "thumbnail_id": "966755-MLA72085750275_102023",
+      "catalog_product_id": null,
+      "listing_type_id": "GOLD_PREMIUM",
+      "permalink": "https://produto.mercadolivre.com.br/MLB-180000004-lampada-led-inteligente-wi-fi-rgb-compativel-com-alexagoogle-home-_JM",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB1000",
+      "domain_id": "MLB-SMART_BULBS",
+      "warranty": "1 ano de garantia",
+      "currency_id": "BRL",
+      "price": 69.90,
+      "original_price": 80.00,
+      "sale_price": null,
+      "available_quantity": 2000,
+      "sold_quantity": 9000,
+      "official_store_id": null,
+      "tags": ["best_seller", "free_shipping"],
+      "installments": {
+        "quantity": 2,
+        "amount": 34.95,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": ["self_service_in"],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "stop_time": "2025-12-15T23:59:59.000Z",
+      "seller": {
+        "id": 44556,
+        "permalink": "http://perfil.mercadolivre.com.br/SELLER.SMART",
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": null,
+          "value_name": "Positivo Casa Inteligente",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Positivo Casa Inteligente",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "POWER",
+          "name": "Potência",
+          "value_id": null,
+          "value_name": "9W",
+          "value_struct": {
+            "number": 9,
+            "unit": "W"
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "9W",
+              "struct": {
+                "number": 9,
+                "unit": "W"
+              }
+            }
+          ],
+          "attribute_group_id": "ENERGIA",
+          "attribute_group_name": "Energia"
+        },
+        {
+          "id": "COLOR_TEMPERATURE",
+          "name": "Temperatura de Cor",
+          "value_id": null,
+          "value_name": "2700K - 6500K",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "2700K - 6500K",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "CARACTERÍSTICAS",
+          "attribute_group_name": "Características"
+        }
+      ],
+      "differential_pricing": {
+        "id": 10101013
+      },
+      "pictures": [
+        {
+          "id": "966755-MLA72085750275_102023",
+          "url": "https://http2.mlstatic.com/D_966755-MLA72085750275_102023-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_966755-MLA72085750275_102023-O.jpg",
+          "size": "700x700",
+          "max_size": "1000x1000",
+          "quality": "88"
+        }
+      ],
+      "accepts_mercadopago": true,
+      "status": "active",
+      "description": "Controle sua iluminação com a lâmpada LED inteligente Wi-Fi RGB. Milhões de cores, ajuste de intensidade e compatibilidade com assistentes de voz Alexa e Google Home. Fácil instalação. Crie cenários para cada momento do seu dia.",
+      "listing_source": "MLB",
+      "variations": null
+    },
+    {
+      "id": "MLB180000005",
+      "title": "Kit de Maquiagem Completo Profissional 12 Peças",
+      "condition": "new",
+      "thumbnail_id": "970034-MLA72085750275_102023",
+      "catalog_product_id": null,
+      "listing_type_id": "GOLD_STANDARD",
+      "permalink": "https://produto.mercadolivre.com.br/MLB-180000005-kit-de-maquiagem-completo-profissional-12-pecas-_JM",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB1246",
+      "domain_id": "MLB-MAKEUP_KITS",
+      "warranty": "Sem garantia",
+      "currency_id": "BRL",
+      "price": 99.90,
+      "original_price": null,
+      "sale_price": null,
+      "available_quantity": 5000,
+      "sold_quantity": 20000,
+      "official_store_id": null,
+      "tags": ["free_shipping_min_value"],
+      "installments": {
+        "quantity": 2,
+        "amount": 49.95,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "stop_time": "2025-10-20T23:59:59.000Z",
+      "seller": {
+        "id": 77889,
+        "permalink": "http://perfil.mercadolivre.com.br/SELLER.BEAUTY",
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": null,
+          "value_name": "Macrilan",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Macrilan",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "NUMBER_OF_PIECES",
+          "name": "Número de peças",
+          "value_id": null,
+          "value_name": "12",
+          "value_struct": {
+            "number": 12,
+            "unit": null
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "12",
+              "struct": {
+                "number": 12,
+                "unit": null
+              }
+            }
+          ],
+          "attribute_group_id": "COMPOSIÇÃO",
+          "attribute_group_name": "Composição"
+        }
+      ],
+      "differential_pricing": {
+        "id": 10101014
+      },
+      "pictures": [
+        {
+          "id": "970034-MLA72085750275_102023",
+          "url": "https://http2.mlstatic.com/D_970034-MLA72085750275_102023-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_970034-MLA72085750275_102023-O.jpg",
+          "size": "650x650",
+          "max_size": "950x950",
+          "quality": "87"
+        }
+      ],
+      "accepts_mercadopago": true,
+      "status": "active",
+      "description": "Complete seu look com o kit de maquiagem profissional. 12 peças essenciais para olhos, rosto e lábios. Perfeito para iniciantes e maquiadores experientes. Inclui pincéis, paletas e batons.",
+      "listing_source": "MLB",
+      "variations": null
+    },
+    {
+      "id": "MLB180000006",
+      "title": "Panela de Pressão Elétrica 6L Digital Antiaderente",
+      "condition": "new",
+      "thumbnail_id": "973401-MLA72085750275_102023",
+      "catalog_product_id": null,
+      "listing_type_id": "GOLD_PREMIUM",
+      "permalink": "https://produto.mercadolivre.com.br/MLB-180000006-panela-de-pressao-eletrica-6l-digital-antiaderente-_JM",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB1278",
+      "domain_id": "MLB-ELECTRIC_PRESSURE_COOKERS",
+      "warranty": "1 ano de garantia",
+      "currency_id": "BRL",
+      "price": 399.00,
+      "original_price": 450.00,
+      "sale_price": null,
+      "available_quantity": 700,
+      "sold_quantity": 6000,
+      "official_store_id": null,
+      "tags": ["best_seller", "free_shipping"],
+      "installments": {
+        "quantity": 10,
+        "amount": 39.90,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": ["self_service_in"],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "stop_time": "2025-12-05T23:59:59.000Z",
+      "seller": {
+        "id": 99887,
+        "permalink": "http://perfil.mercadolivre.com.br/SELLER.KITCHEN",
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": null,
+          "value_name": "Mondial",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Mondial",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "CAPACITY_L",
+          "name": "Capacidade em volume",
+          "value_id": null,
+          "value_name": "6 L",
+          "value_struct": {
+            "number": 6,
+            "unit": "L"
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "6 L",
+              "struct": {
+                "number": 6,
+                "unit": "L"
+              }
+            }
+          ],
+          "attribute_group_id": "ESPECIFICAÇÕES",
+          "attribute_group_name": "Especificações"
+        },
+        {
+          "id": "POWER_W",
+          "name": "Potência",
+          "value_id": null,
+          "value_name": "1000 W",
+          "value_struct": {
+            "number": 1000,
+            "unit": "W"
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "1000 W",
+              "struct": {
+                "number": 1000,
+                "unit": "W"
+              }
+            }
+          ],
+          "attribute_group_id": "ENERGIA",
+          "attribute_group_name": "Energia"
+        }
+      ],
+      "differential_pricing": {
+        "id": 10101015
+      },
+      "pictures": [
+        {
+          "id": "973401-MLA72085750275_102023",
+          "url": "https://http2.mlstatic.com/D_973401-MLA72085750275_102023-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_973401-MLA72085750275_102023-O.jpg",
+          "size": "750x750",
+          "max_size": "1100x1100",
+          "quality": "92"
+        }
+      ],
+      "accepts_mercadopago": true,
+      "status": "active",
+      "description": "Cozinhe com segurança e praticidade. Panela de pressão elétrica digital com 6 litros de capacidade, painel programável e revestimento antiaderente. Diversas funções pré-definidas para arroz, feijão, carnes e sopas. Panela interna antiaderente e fácil de limpar.",
+      "listing_source": "MLB",
+      "variations": null
+    },
+    {
+      "id": "MLB180000007",
+      "title": "Cadeira de Escritório Ergonômica Presidente com Apoio Lombar",
+      "condition": "new",
+      "thumbnail_id": "976789-MLA72085750275_102023",
+      "catalog_product_id": null,
+      "listing_type_id": "GOLD_PREMIUM",
+      "permalink": "https://produto.mercadolivre.com.br/MLB-180000007-cadeira-de-escritorio-ergonomica-presidente-com-apoio-lombar-_JM",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB1000",
+      "domain_id": "MLB-OFFICE_CHAIRS",
+      "warranty": "1 ano de garantia",
+      "currency_id": "BRL",
+      "price": 649.00,
+      "original_price": 700.00,
+      "sale_price": null,
+      "available_quantity": 400,
+      "sold_quantity": 4500,
+      "official_store_id": null,
+      "tags": ["best_seller", "free_shipping"],
+      "installments": {
+        "quantity": 12,
+        "amount": 54.08,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": ["self_service_in"],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "stop_time": "2025-12-20T23:59:59.000Z",
+      "seller": {
+        "id": 11122,
+        "permalink": "http://perfil.mercadolivre.com.br/SELLER.FURNITURE",
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": null,
+          "value_name": "FlexForm",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "FlexForm",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "ErgoChair",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "ErgoChair",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "COLOR",
+          "name": "Cor",
+          "value_id": null,
+          "value_name": "Preto",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Preto",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "GERAL",
+          "attribute_group_name": "Geral"
+        },
+        {
+          "id": "MAX_WEIGHT_SUPPORT",
+          "name": "Peso Máximo Suportado",
+          "value_id": null,
+          "value_name": "150 kg",
+          "value_struct": {
+            "number": 150,
+            "unit": "kg"
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "150 kg",
+              "struct": {
+                "number": 150,
+                "unit": "kg"
+              }
+            }
+          ],
+          "attribute_group_id": "DIMENSÕES",
+          "attribute_group_name": "Dimensões"
+        }
+      ],
+      "differential_pricing": {
+        "id": 10101016
+      },
+      "pictures": [
+        {
+          "id": "976789-MLA72085750275_102023",
+          "url": "https://http2.mlstatic.com/D_976789-MLA72085750275_102023-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_976789-MLA72085750275_102023-O.jpg",
+          "size": "850x850",
+          "max_size": "1300x1300",
+          "quality": "91"
+        }
+      ],
+      "accepts_mercadopago": true,
+      "status": "active",
+      "description": "Conforto e suporte para seu dia de trabalho. Cadeira de escritório ergonômica presidente com apoio lombar, ajuste de altura e encosto reclinável. Ideal para longas horas de uso. Rodízios silenciosos e base reforçada.",
+      "listing_source": "MLB",
+      "variations": null
+    },
+    {
+      "id": "MLB180000008",
+      "title": "Jogo de Lençol Casal 4 Peças 180 Fios Microfibra",
+      "condition": "new",
+      "thumbnail_id": "980045-MLA72085750275_102023",
+      "catalog_product_id": null,
+      "listing_type_id": "GOLD_STANDARD",
+      "permalink": "https://produto.mercadolivre.com.br/MLB-180000008-jogo-de-lencol-casal-4-pecas-180-fios-microfibra-_JM",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB1205",
+      "domain_id": "MLB-BED_SHEETS",
+      "warranty": "Sem garantia",
+      "currency_id": "BRL",
+      "price": 79.90,
+      "original_price": null,
+      "sale_price": null,
+      "available_quantity": 8000,
+      "sold_quantity": 30000,
+      "official_store_id": null,
+      "tags": ["free_shipping_min_value"],
+      "installments": {
+        "quantity": 2,
+        "amount": 39.95,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "stop_time": "2025-11-10T23:59:59.000Z",
+      "seller": {
+        "id": 33445,
+        "permalink": "http://perfil.mercadolivre.com.br/SELLER.HOME_TEXTILE",
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": null,
+          "value_name": "Artex",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Artex",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "THREAD_COUNT",
+          "name": "Quantidade de Fios",
+          "value_id": null,
+          "value_name": "180 Fios",
+          "value_struct": {
+            "number": 180,
+            "unit": "Fios"
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "180 Fios",
+              "struct": {
+                "number": 180,
+                "unit": "Fios"
+              }
+            }
+          ],
+          "attribute_group_id": "TECIDO",
+          "attribute_group_name": "Tecido"
+        },
+        {
+          "id": "SIZE",
+          "name": "Tamanho",
+          "value_id": null,
+          "value_name": "Casal",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Casal",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "GERAL",
+          "attribute_group_name": "Geral"
+        },
+        {
+          "id": "COLOR",
+          "name": "Cor",
+          "value_id": null,
+          "value_name": "Branco",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Branco",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "GERAL",
+          "attribute_group_name": "Geral"
+        }
+      ],
+      "differential_pricing": {
+        "id": 10101017
+      },
+      "pictures": [
+        {
+          "id": "980045-MLA72085750275_102023",
+          "url": "https://http2.mlstatic.com/D_980045-MLA72085750275_102023-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_980045-MLA72085750275_102023-O.jpg",
+          "size": "700x700",
+          "max_size": "1000x1000",
+          "quality": "89"
+        }
+      ],
+      "accepts_mercadopago": true,
+      "status": "active",
+      "description": "Aconchego e durabilidade para sua cama. Jogo de lençol casal com 4 peças em microfibra 180 fios, maciez e conforto para suas noites de sono. Inclui lençol de cima, lençol de baixo com elástico e duas fronhas.",
+      "listing_source": "MLB",
+      "variations": null
+    },
+    {
+      "id": "MLB180000009",
+      "title": "Caixa de Som Bluetooth Portátil com LED RGB e Grave Potente",
+      "condition": "new",
+      "thumbnail_id": "983312-MLA72085750275_102023",
+      "catalog_product_id": null,
+      "listing_type_id": "GOLD_PRO",
+      "permalink": "https://produto.mercadolivre.com.br/MLB-180000009-caixa-de-som-bluetooth-portatil-com-led-rgb-e-grave-potente-_JM",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB3522",
+      "domain_id": "MLB-PORTABLE_SPEAKERS",
+      "warranty": "6 meses de garantia",
+      "currency_id": "BRL",
+      "price": 189.90,
+      "original_price": 220.00,
+      "sale_price": null,
+      "available_quantity": 1000,
+      "sold_quantity": 8500,
+      "official_store_id": null,
+      "tags": ["best_seller", "free_shipping"],
+      "installments": {
+        "quantity": 4,
+        "amount": 47.48,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": ["self_service_in"],
+        "logistic_type": "fulfillment",
+        "store_pick_up": false
+      },
+      "stop_time": "2025-12-25T23:59:59.000Z",
+      "seller": {
+        "id": 55667,
+        "permalink": "http://perfil.mercadolivre.com.br/SELLER.SOUND",
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": null,
+          "value_name": "JBL",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "JBL",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "Flip 6",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Flip 6",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "POWER_OUTPUT_W",
+          "name": "Potência de saída (RMS)",
+          "value_id": null,
+          "value_name": "30W",
+          "value_struct": {
+            "number": 30,
+            "unit": "W"
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "30W",
+              "struct": {
+                "number": 30,
+                "unit": "W"
+              }
+            }
+          ],
+          "attribute_group_id": "ÁUDIO",
+          "attribute_group_name": "Áudio"
+        },
+        {
+          "id": "BATTERY_LIFE",
+          "name": "Duração da bateria",
+          "value_id": null,
+          "value_name": "12h",
+          "value_struct": {
+            "number": 12,
+            "unit": "h"
+          },
+          "values": [
+            {
+              "id": null,
+              "name": "12h",
+              "struct": {
+                "number": 12,
+                "unit": "h"
+              }
+            }
+          ],
+          "attribute_group_id": "BATERIA",
+          "attribute_group_name": "Bateria"
+        }
+      ],
+      "differential_pricing": {
+        "id": 10101018
+      },
+      "pictures": [
+        {
+          "id": "983312-MLA72085750275_102023",
+          "url": "https://http2.mlstatic.com/D_983312-MLA72085750275_102023-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_983312-MLA72085750275_102023-O.jpg",
+          "size": "800x800",
+          "max_size": "1200x1200",
+          "quality": "90"
+        }
+      ],
+      "accepts_mercadopago": true,
+      "status": "active",
+      "description": "Leve a festa para onde quiser com a caixa de som Bluetooth portátil. LED RGB dinâmico, grave potente e bateria recarregável. Perfeita para qualquer ambiente e evento.",
+      "listing_source": "MLB",
+      "variations": null
+    },
+    {
+      "id": "MLB180000010",
+      "title": "Máquina de Cortar Cabelo Profissional Recarregável Sem Fio",
+      "condition": "new",
+      "thumbnail_id": "986623-MLA72085750275_102023",
+      "catalog_product_id": null,
+      "listing_type_id": "GOLD_STANDARD",
+      "permalink": "https://produto.mercadolivre.com.br/MLB-180000010-maquina-de-cortar-cabelo-profissional-recarregavel-sem-fio-_JM",
+      "buying_mode": "buy_it_now",
+      "site_id": "MLB",
+      "category_id": "MLB1480",
+      "domain_id": "MLB-HAIR_CLIPPERS",
+      "warranty": "6 meses de garantia",
+      "currency_id": "BRL",
+      "price": 119.00,
+      "original_price": 130.00,
+      "sale_price": null,
+      "available_quantity": 1800,
+      "sold_quantity": 11000,
+      "official_store_id": null,
+      "tags": ["best_seller", "free_shipping_min_value"],
+      "installments": {
+        "quantity": 3,
+        "amount": 39.67,
+        "rate": 0,
+        "currency_id": "BRL"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": [],
+        "logistic_type": "drop_off",
+        "store_pick_up": false
+      },
+      "stop_time": "2025-11-28T23:59:59.000Z",
+      "seller": {
+        "id": 11001,
+        "permalink": "http://perfil.mercadolivre.com.br/SELLER.BEAUTY_APPLIANCES",
+        "power_seller_status": "gold",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "attributes": [
+        {
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": null,
+          "value_name": "Wahl",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Wahl",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": null,
+          "value_name": "Magic Clip Cordless",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Magic Clip Cordless",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "PRINCIPAIS",
+          "attribute_group_name": "Principais"
+        },
+        {
+          "id": "POWER_SOURCE",
+          "name": "Fonte de Energia",
+          "value_id": null,
+          "value_name": "Bateria Recarregável",
+          "value_struct": null,
+          "values": [
+            {
+              "id": null,
+              "name": "Bateria Recarregável",
+              "struct": null
+            }
+          ],
+          "attribute_group_id": "ESPECIFICAÇÕES",
+          "attribute_group_name": "Especificações"
+        }
+      ],
+      "differential_pricing": {
+        "id": 10101019
+      },
+      "pictures": [
+        {
+          "id": "986623-MLA72085750275_102023",
+          "url": "https://http2.mlstatic.com/D_986623-MLA72085888888_102023-O.jpg",
+          "secure_url": "https://http2.mlstatic.com/D_986623-MLA72085888888_102023-O.jpg",
+          "size": "700x700",
+          "max_size": "1000x1000",
+          "quality": "89"
+        }
+      ],
+      "accepts_mercadopago": true,
+      "status": "active",
+      "description": "Corte de cabelo preciso e sem complicações. Máquina profissional recarregável, lâminas de alta precisão e design ergonômico. Ideal para uso doméstico e profissional. Bateria de longa duração para uso contínuo.",
+      "listing_source": "MLB",
+      "variations": null
+    }
+  ],
+  "sort": {
+    "id": "relevance",
+    "name": "Mais relevantes"
+  },
+  "available_sorts": [
+    {
+      "id": "relevance",
+      "name": "Mais relevantes"
+    },
+    {
+      "id": "price_asc",
+      "name": "Menor preço"
+    },
+    {
+      "id": "price_desc",
+      "name": "Maior preço"
+    }
+  ],
+  "filters": [],
+  "available_filters": []
+}

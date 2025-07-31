@@ -7,7 +7,35 @@
 		<key>MeliProject.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Rx (Playground).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>SnapKitPlayground (Playground).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>13EF745E2E37FA210096549E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>13EF74772E37FA250096549E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>13EF74812E37FA250096549E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

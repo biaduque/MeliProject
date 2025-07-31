@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1322F41C2E3B237C000C7088 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 1322F41B2E3B237C000C7088 /* RxBlocking */; };
 		13255F462E380A6300ED0E45 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 13255F452E380A6300ED0E45 /* RxCocoa */; };
 		13255F482E380A6300ED0E45 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 13255F472E380A6300ED0E45 /* RxSwift */; };
 		13255F4B2E380A7000ED0E45 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 13255F4A2E380A7000ED0E45 /* SnapKit */; };
 		132560922E391C2D00ED0E45 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 132560912E391C2D00ED0E45 /* Kingfisher */; };
+		13982E9A2E3B3B66001C3333 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 13982E992E3B3B66001C3333 /* RxTest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,14 +33,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13982F862E3B4493001C3333 /* MeliProject.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = MeliProject.xctestplan; path = MeliProjectTests/MeliProject.xctestplan; sourceTree = "<group>"; };
 		13EF745F2E37FA210096549E /* MeliProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeliProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EF74782E37FA250096549E /* MeliProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeliProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EF74822E37FA250096549E /* MeliProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeliProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1322F4172E3B1B50000C7088 /* Exceptions for "MeliProjectTests" folder in "MeliProject" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Features/Mocks/token_mock_test.json,
+			);
+			target = 13EF745E2E37FA210096549E /* MeliProject */;
+		};
 		13EF748A2E37FA250096549E /* Exceptions for "MeliProject" folder in "MeliProject" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			additionalCompilerFlagsByRelativePath = {
+				App/AppCore/AppDelegate.swift = "-fno-coverage";
+				App/AppCore/SceneDelegate.swift = "-fno-coverage";
+				App/CoreData/MeliProject.xcdatamodeld = "-fno-coverage";
+				Modules/Manager/MeliAPIManager.swift = "-fno-coverage";
+				Modules/Token/AuthManager.swift = "-fno-coverage";
+				Modules/Token/TokenManager.swift = "-fno-coverage";
+			};
 			membershipExceptions = (
 				Info.plist,
 			);
@@ -57,6 +75,9 @@
 		};
 		13EF747B2E37FA250096549E /* MeliProjectTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1322F4172E3B1B50000C7088 /* Exceptions for "MeliProjectTests" folder in "MeliProject" target */,
+			);
 			path = MeliProjectTests;
 			sourceTree = "<group>";
 		};
@@ -76,6 +97,7 @@
 				13255F4B2E380A7000ED0E45 /* SnapKit in Frameworks */,
 				13255F482E380A6300ED0E45 /* RxSwift in Frameworks */,
 				13255F462E380A6300ED0E45 /* RxCocoa in Frameworks */,
+				1322F41C2E3B237C000C7088 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13982E9A2E3B3B66001C3333 /* RxTest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +122,7 @@
 		13EF74562E37FA210096549E = {
 			isa = PBXGroup;
 			children = (
+				13982F862E3B4493001C3333 /* MeliProject.xctestplan */,
 				13EF74612E37FA210096549E /* MeliProject */,
 				13EF747B2E37FA250096549E /* MeliProjectTests */,
 				13EF74852E37FA250096549E /* MeliProjectUITests */,
@@ -140,6 +164,7 @@
 				13255F472E380A6300ED0E45 /* RxSwift */,
 				13255F4A2E380A7000ED0E45 /* SnapKit */,
 				132560912E391C2D00ED0E45 /* Kingfisher */,
+				1322F41B2E3B237C000C7088 /* RxBlocking */,
 			);
 			productName = MeliProject;
 			productReference = 13EF745F2E37FA210096549E /* MeliProject.app */;
@@ -163,6 +188,7 @@
 			);
 			name = MeliProjectTests;
 			packageProductDependencies = (
+				13982E992E3B3B66001C3333 /* RxTest */,
 			);
 			productName = MeliProjectTests;
 			productReference = 13EF74782E37FA250096549E /* MeliProjectTests.xctest */;
@@ -626,6 +652,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1322F41B2E3B237C000C7088 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13255F442E380A6300ED0E45 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
 		13255F452E380A6300ED0E45 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 13255F442E380A6300ED0E45 /* XCRemoteSwiftPackageReference "RxSwift" */;
@@ -645,6 +676,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 132560902E391C2D00ED0E45 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		13982E992E3B3B66001C3333 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13255F442E380A6300ED0E45 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

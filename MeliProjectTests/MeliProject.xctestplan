@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "22567E98-43BB-4523-8CD3-95BA0FF8A87D",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MeliProject.xcodeproj",
+      "identifier" : "13EF745E2E37FA210096549E",
+      "name" : "MeliProject"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MeliProject.xcodeproj",
+        "identifier" : "13EF74772E37FA250096549E",
+        "name" : "MeliProjectTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MeliProject.xcodeproj",
+        "identifier" : "13EF74812E37FA250096549E",
+        "name" : "MeliProjectUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
